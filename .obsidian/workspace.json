@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "3c3de34a090812ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8d9bad5fee85547",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f7b4b9eb31109c3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "cd20a3da3fb672eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/PSTT.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "58bb927d41ea6641",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Optimizing Storage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4d0211da1463bdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Mongod.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7ea640d7f469e904",
+    "type": "split",
+    "children": [
+      {
+        "id": "65c934ca773de767",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "133ab85df6ecd04f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2fcbde6b45e79ba0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4ce5fb669ba5fdcd",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "55ffd3be1c1aaa75",
+    "type": "split",
+    "children": [
+      {
+        "id": "00b84189de1c13a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e77452e2f57d1585",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7c39dfc18f387884",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "66e34f982fb716b6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "529f85e0c8b7acf5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "754d290ec9a8b95e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "bb74de5bfb931ad0",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "c8c3f610d198df08",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "3f7b4b9eb31109c3",
+  "lastOpenFiles": [
+    "2022-11-09.md",
+    "2022-11-10.md",
+    "Slow Query.md",
+    "PSTT/PSTT.md",
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Mongod.md",
+    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Replication.md",
+    "PSTT/Intro to Mongodb.md",
+    "PSTT/Sharding.md"
+  ]
+}

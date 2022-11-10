@@ -84,7 +84,7 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 - Limit: Upto 32 fields per index.
 - Can create like single field index but with more fields specified.
 - Index will be used as long as the first field mentioned in index are in query.
-- Index is fully utilised when first N fields are used in Query.
+- Index is fully utilised when first N fields are used in Query. (Called Index Prefixing)
 	- e.g. For a multi key index `{a:1,b:1,c:1}` 
 	- If we use only `a` in query, index will be utilised and scan all documents with `a`. Which is optimal and intended
 	- If we use `a,b` or `a,b,c` index will be utilised and scan all documents with `a,b` or `a,b,c`, this is also optimal.

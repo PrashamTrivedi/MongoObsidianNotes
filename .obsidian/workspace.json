@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/PSTT.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/PSTT.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/PSTT.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/PSTT.md"
+                "file": "PSTT/Optimizing Storage.md"
               }
             }
           },
@@ -202,10 +202,10 @@
   },
   "active": "3f7b4b9eb31109c3",
   "lastOpenFiles": [
+    "PSTT/PSTT.md",
     "2022-11-09.md",
     "2022-11-10.md",
     "Slow Query.md",
-    "PSTT/PSTT.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Mongod.md",
     "PSTT/Diagnostic And Debugging.md",

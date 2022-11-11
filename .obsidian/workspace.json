@@ -11,8 +11,13 @@
             "id": "3f7b4b9eb31109c3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Optimizing Storage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           },
           {
@@ -120,6 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "PSTT/Optimizing Storage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,6 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "PSTT/Optimizing Storage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +164,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "PSTT/Optimizing Storage.md"
+              }
             }
           },
           {
@@ -191,7 +200,7 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "133ab85df6ecd04f",
+  "active": "3f7b4b9eb31109c3",
   "lastOpenFiles": [
     "Presentations/Presentations.md",
     "PSTT/PSTT.md",

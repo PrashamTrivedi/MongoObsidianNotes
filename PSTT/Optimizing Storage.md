@@ -257,3 +257,5 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 	- Inappropriately large arrays 
 	- Running code in db.
 - Too complex Nested Joins using `$lookup` or `$graphLookup` 
+
+# Aggregation

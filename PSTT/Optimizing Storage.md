@@ -259,3 +259,17 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 - Too complex Nested Joins using `$lookup` or `$graphLookup` 
 
 # Aggregation
+
+- Some stages, if used in start of the pipeline, are transformed into `find()` by Query optimiser.
+
+| Aggregation stage | Equivalent query operator for optimising |
+| ----------------- | --------------------- |
+| `$match` | `.find()` |
+| `$project` | `.find({},{PROJECTION}`) |
+| `$sort` | `.find().sort()` |
+| `$limit` | `.find().limit()` |
+| `$skip` | `.find().skip()` |
+| `$count` | `.find().count()` |
+
+- 
+

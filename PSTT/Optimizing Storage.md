@@ -274,3 +274,29 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 - [Aggregation Pipeline Stages](https://www.mongodb.com/docs/manual/reference/operator/aggregation-pipeline/)
 - [Aggregation Pipeline Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
 
+
+- Expression variables in aggregation pipelines are denoted with `$$`
+- [Aggregation Variables](https://www.mongodb.com/docs/v6.0/reference/aggregation-variables/)
+
+## Optimising aggregation
+- Some common tips
+	- Start with step that filter out most of the data.
+	- Two consecutive matches should be combined with `$and` clause
+	- Consider project as last step in pipeline. Pipeline can work with minimal data needed for result.
+		- If we do project early in the pipeline chances are that pipeline may not have some variable that it needs.
+		- If we need to have a calculated result `$set` (equivalent of `$addField`) stage is recommended.
+	- `$unwind`ing an array only to `$group` them using same field is anti-pattern.
+		- Better to use accumulators on array.
+	- Prefer streaming stages in most of the pipelines, use blocking stages at the end.
+		- `$sort(withoutIndex)`,`$group`,`$bucket`,`$facet` are blocking stages.
+		- Streaming stage will process documents as they come and send to the other side.
+		- Blocking stages wait for all document to enter in the stage to start processing.
+
+
+## Aggregation in [[Sharding|Sharded cluster]]
+
+- On sharded clusters, operations run in parallel where possible.
+- Combining operations run in different location
+	- An easy merge operation which require little to no calculation run on [[Sharding#`mongos`|`mongos`]]
+	- Other calculations can happen on primary shard or random shard depending on MongoDB server version and operation.
+

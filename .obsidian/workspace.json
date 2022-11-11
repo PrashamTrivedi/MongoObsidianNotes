@@ -11,13 +11,8 @@
             "id": "3f7b4b9eb31109c3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Readme.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -125,7 +120,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +136,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Readme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,9 +157,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Readme.md"
-              }
+              "state": {}
             }
           },
           {
@@ -200,17 +191,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3f7b4b9eb31109c3",
+  "active": "133ab85df6ecd04f",
   "lastOpenFiles": [
-    "ScreenshotNewVault.png",
-    "Readme.md",
+    "Presentations/Presentations.md",
     "PSTT/PSTT.md",
+    "Readme.md",
+    "ScreenshotNewVault.png",
     "PSTT/Optimizing Storage.md",
     "2022-11-09.md",
     "2022-11-10.md",
     "Slow Query.md",
     "PSTT/Mongod.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Replication.md"
+    "PSTT/Diagnostic And Debugging.md"
   ]
 }

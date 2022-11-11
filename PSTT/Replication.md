@@ -68,7 +68,7 @@ The topology of replica set is defined one of the nodes, and shared between node
 
 - `_id`: Name of the replica sets
 - `version`: Incremented every time the replica set is changed. (Like new node added, removed)
-- `term`: (Added after MongoDB 4.4) Incremented every time a primary node is stepped down, and new primary node is elected. That primary node will increment the term.
+- `term`: (Added after MongoDB 4.4) Incremented every time a primary node is stepped down, and new primary node is elected. That primary node will increment the term. #version #gotchas 
   - The latest configuration will be determined from greater term value. If term is not present or have same value in all nodes, configuration with the greatest version will be considered latest.
 - `members`: List all members in Replica set.
   - `host`: Having host name and port.

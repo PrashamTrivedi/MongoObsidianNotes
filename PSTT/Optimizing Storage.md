@@ -91,7 +91,7 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 	- If we use `a,c` Index will be utilised and scan all documents with `a` (this is intended stage), then scan all documents with `b` (which was never desired or even mentioned in query) and then filter out `c`, thus despite the index being used it is not utilised fully.
 
 ### ESR Rule
-- While creating compound index consider following rule.
+- While creating compound index consider following rule. #recommendation 
 	- Equality before Range
 	- Equality before Sort
 	- Sort before Range
@@ -198,8 +198,9 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 		- A new relevant index is being added in that collection
 		- The server is restarted.
 - If someone wants to use the index forcefully, [`hint` method](https://www.mongodb.com/docs/manual/reference/method/cursor.hint/) should be used.
-- Index can be used for Regex 
+- Index can be used for Regex  ^regexIndex
 	- If anchored at start (Like : `{name:/^Hon/}`)
+	- Is case sensitive
 	- Mostly a range query.
 - We can define [collation](https://www.mongodb.com/docs/manual/reference/collation/).
 
@@ -231,7 +232,8 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 - DB Log
 	- `db.adminCommand({getLog:'global'})`
 		- Gets last 1024 entries
-		- Currently they are JSON but before 4.4 they were plaintext.
+		- Currently they are JSON but before 4.4 they were plaintext. #version #gotchas
+	
 		- Options for `getLog`
 			- `global`: Combined output of all recent entries (Something we're interested in)
 			- `startupWarnings`: Return entries that may contain errors or warnings when current process started.
@@ -240,7 +242,7 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 
 - Slow Query are those which takes longer then [[Mongod#^slowMs|slowMs]] which is default to 100ms and can be configured.
 - If we turn on [[Mongod#Profiler|profiler]] we can record slow operations or all operations in [[Mongod#^systemProfileCollection|`system.profile` collection]]
-	- However it causes twice the writes and one write and read for slow operations and thus it's desirable to either turn off the profiler or using logs if we are using MongoDB 4.4 or newer.
+	- However it causes twice the writes and one write and read for slow operations and thus it's desirable to either turn off the profiler or using logs if we are using MongoDB 4.4 or newer. #version #gotchas 
 
 
 ## Causes of Slow Operations
@@ -282,9 +284,9 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 - Some common tips
 	- Start with step that filter out most of the data.
 	- Two consecutive matches should be combined with `$and` clause
-	- Consider project as last step in pipeline. Pipeline can work with minimal data needed for result.
+	- Consider project as last step in pipeline. Pipeline can work with minimal data needed for result. #recommendation 
 		- If we do project early in the pipeline chances are that pipeline may not have some variable that it needs.
-		- If we need to have a calculated result `$set` (equivalent of `$addField`) stage is recommended.
+		- If we need to have a calculated result `$set` (equivalent of `$addField`) stage is recommended. #recommendation 
 	- `$unwind`ing an array only to `$group` them using same field is anti-pattern.
 		- Better to use accumulators on array.
 	- Prefer streaming stages in most of the pipelines, use blocking stages at the end.

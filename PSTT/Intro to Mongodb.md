@@ -28,10 +28,10 @@ aliases: DF100
 ## Cursor
 - When we run a query, a `cursor` is returned and by default it prints the result of first 20 documents according to `find` parameters.
 - If we assign a cursor to a variable, that variable doesn't do anything, that cursor variable should call some method to retrieve the data from server like `hasNext`, `next`, `itcount` or `forEach` where it connects the server, retrieves some data and prints the result. 
-- Some methods available in `mongosh` for cursor are listed [here](https://www.mongodb.com/docs/manual/reference/method/js-cursor/)
-	- Cursor fetches the data from the server in the batches and caches them in memory, and during `hasNext` or `next` calls, cursor tries to fetch the data from cache and goes to server if data is not present in cache.
+- Some methods available in `mongosh` for cursor are listed [here](https://www.mongodb.com/docs/manual/reference/method/js-cursor/) ^cursorCache
+	- Cursor fetches the data from the server in the batches and caches them in memory, and during `hasNext` or `next` calls, cursor tries to fetch the data from cache and goes to server if data is not present in cache. ^8aaf23
 	- Default batch size in shell during initial call is 101 documents or 1MB data (Whichever is larger). 
-	- When I exhaust initial batch, server will call `getMore` to receive next batch, which fetches in 4MB chunks.
+	- When exhaust initial batch is exhausted, server will call `getMore` to receive next batch, which fetches in 4MB chunks. ^cursorCacheGetMore
 
 ## Querying
 

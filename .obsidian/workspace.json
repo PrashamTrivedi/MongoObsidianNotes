@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f8d9bad5fee85547",
+        "id": "020af057ded1a9da",
         "type": "tabs",
         "children": [
           {
-            "id": "3f7b4b9eb31109c3",
+            "id": "94a34766bddad00b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "cd20a3da3fb672eb",
+            "id": "6f9f8fad48131016",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/PSTT.md",
+                "file": "PSTT/Intro to Mongodb.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,32 +34,20 @@
             }
           },
           {
-            "id": "58bb927d41ea6641",
+            "id": "60706ea3be64657e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4d0211da1463bdd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Mongod.md",
+                "file": "PSTT/Intro to Mongodb.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +80,7 @@
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
@@ -125,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "PSTT/Intro to Mongodb.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "PSTT/Intro to Mongodb.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Optimizing Storage.md"
+                "file": "PSTT/Intro to Mongodb.md"
               }
             }
           },
@@ -200,17 +188,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3f7b4b9eb31109c3",
+  "active": "6f9f8fad48131016",
   "lastOpenFiles": [
-    "Presentations/Presentations.md",
-    "PSTT/PSTT.md",
-    "Readme.md",
-    "ScreenshotNewVault.png",
+    "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Intro to Mongodb.md",
     "PSTT/Optimizing Storage.md",
-    "2022-11-09.md",
-    "2022-11-10.md",
-    "Slow Query.md",
+    "PSTT/Replication.md",
     "PSTT/Mongod.md",
-    "PSTT/Diagnostic And Debugging.md"
+    "Slow Query.md",
+    "PSTT/Sharding.md",
+    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/PSTT.md",
+    "Untitled.md"
   ]
 }

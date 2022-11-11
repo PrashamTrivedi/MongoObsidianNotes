@@ -54,7 +54,7 @@ When we query something where result can be stored in more than one shard, `mong
 
 ### Strategies to shard
 
-To chose shard keys, follow these recommendations
+To chose shard keys, follow these recommendations #recommendation 
 
 1. High Cardinality: The chosen shard key should have high cardinality (Number of elements in set). i.e. It should have many unique values.
 2. High Frequency: Low repetition of given unique sharding key values, so one shard do not end up having data with 90% queries.

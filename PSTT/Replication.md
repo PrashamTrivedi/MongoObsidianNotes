@@ -39,7 +39,7 @@ The topology of replica set is defined one of the nodes, and shared between node
   - More than 7 nodes may require more time in elections, which is not beneficial for election purpose.
   - Out of those 7 nodes, one of them can be primary and remaining 6 will be able to participate in next round of electing primary nodes
 
-[^1]: Idempotent: If an operation is idempotent, it will output same result no matter how many times it's applied.
+[^1]: ![[Design Skills and Advanced Features#^idempotency]]
 
 ### Some commands
 

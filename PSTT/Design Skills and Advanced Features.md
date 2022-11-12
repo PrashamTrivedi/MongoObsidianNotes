@@ -188,7 +188,20 @@
 
 - Single Document writes are atomic
 - Write operation takes locks for writes only reads can happen regardless. ![[Intro to Mongodb#MVCC|See MVCC]]
-- 
+
 
 
 [^3]: Having field with value null.
+
+
+# Developer Good Practices
+
+## Idempotent Operations
+- Idempotent: If an operation is idempotent, it will output same result no matter how many times it's applied. ^idempotency
+- Doing same operations again should not result in duplicates
+- Following write operations are idempotent
+	- Insert with supplied `_id` values. (You can't insert same id twice)
+	- Delete (You can't delete same thing twice)
+	- Update (If we're explicitly updating values and not using relative updates like increment or decrement, updating same values will be ignored.) 
+- If there is an non idempotent operation (Usually an update with relative values or insert without `_id`) use condition to identify duplicate records or update only records which are not updated.
+- 

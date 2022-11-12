@@ -204,4 +204,30 @@
 	- Delete (You can't delete same thing twice)
 	- Update (If we're explicitly updating values and not using relative updates like increment or decrement, updating same values will be ignored.) 
 - If there is an non idempotent operation (Usually an update with relative values or insert without `_id`) use condition to identify duplicate records or update only records which are not updated.
-- 
+
+## Authentication
+
+- It's complicated for security reason
+	- Good practice to have a singleton object that authenticates...
+	- ...And have a connection pool of authenticated client connections #recommendation 
+
+## ORM/ODM (Object Relation/Document Mapper)
+
+- Third party libraries which maps native language object with database native schema.
+- Like Spring Data, Morphia, Mongoose
+- ORM/ODM is an idea borrowed from Relational Database where objects/JSONs/maps have no one to one mapping with columns, but should have.
+>[!warning] 
+>
+> - No ORM/ODM is officially supported by MongoDB
+> - They are not necessarily follow best practice
+> - They are not always using latest drivers and thus missing out capabilities of latest versions
+- Instead of using ORM/ODM, it's better to use Data Access Layer in the apps which are responsible for managing all the data. #recommendation 
+
+### CODECs
+- [CODEC Document](https://www.mongodb.com/docs/drivers/java/sync/current/fundamentals/data-formats/codecs/)
+- Many MongoDB drivers (like Java) support CODECs
+- They are Classes registered with drivers to convert native Classes to and from BSON.
+- Default POJO/POCO (Plain Old Java/C# Object) allow have 1:1 mapping between class instances and underlying MongoDB documents
+- Custom CODECs allow developers to define custom mapping.
+- They are not Flexible as Data Access Layers, but provide first party support to ODM concept in some languages.
+

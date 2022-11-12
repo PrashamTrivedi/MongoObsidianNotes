@@ -289,3 +289,65 @@
 - If searching within the children are essential, consider embedding.
 - Even if embedding, consider adding `_id` field of child to access whole document of child. #recommendation 
 
+## Payload vs Process fields
+- Payload fields: Fields where values are there to storage or retrieval
+	- Just there for storage and retrieval, not playing any part on workflow.
+	- E.g. About field of a profile.
+- Process fields: Metadata we examine in Database
+	- The fields who are used in querying, aggregating or deriving other data.
+	- E.g. Address of profile, used to get nearby users or DOB from which age is calculated to provide age appropriate content.
+
+## Dynamic Models
+
+### Evolutionary Dynamic Schema
+
+- Schema changes as App changes
+- Schema versioning
+- No need to immediate conversion/migration
+
+### Payload Driven Dynamic Schema
+
+- The app's purpose is to store some arbitrary data, developer has no control over it.
+- Hard to index and hard to make performant
+- Unpredictable schema
+
+
+### Data Driven Dynamic Schema
+
+- Field names are actual values which are mapped to other values
+- Requires a new development approach where developer don't know the key beforehand and have to traverse through all keys.
+	- Equivalent to querying with `$exists` instead of `$eq`.
+	- Highly performant, can save around 30% of data if not more.
+
+## Design patterns
+
+- Not universally understood and accepted 
+
+### Attribute pattern
+- Follows [[#Data Driven Dynamic Schema]]
+- Not all values may present in record
+- Easy to search, instead of querying value where name is X, we query the value of X
+- Indexing is quite difficult.
+- Confusion over [[#Payload vs Process fields]]
+- Use either [[Optimizing Storage#Wildcard Indexes|Wildcard Index]] or Embedded document with a common name.
+	- Like attributes for E-commerce.
+
+### Bucket pattern
+- Most common design pattern
+- Main document has an information of their bucket (e.g. a parent entity where the data belongs)
+	- E.g. IoT data consists sensor name
+	- Bank transaction data consists account number
+- Store many small, related data items.
+- Speeds up retrieval.
+- Indices are smaller 
+- Enables Computed Pattern
+
+### Computed Pattern
+
+- Never recompute if you can pre-compute.
+- Used when computed reads are more often then computed writes.
+	- E.g. Live score (Esp in slow-er sports like football) where there are limited process to write, but unlimited readers.
+- Sometimes we may require to update some additional summary records too
+
+
+

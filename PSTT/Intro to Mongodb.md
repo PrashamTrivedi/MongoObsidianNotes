@@ -8,7 +8,7 @@ aliases: DF100
 
 - ==BSON== : ==B==inary ==S==erialized ==O==bject ==N==otation
 
-- [BSON Data types](https://www.mongodb.com/docs/manual/reference/bson-types/)
+- [BSON Data types](https://www.mongodb.com/docs/manual/reference/bson-types/) ^bson
 
 - [Object ID](https://www.mongodb.com/docs/manual/reference/bson-types/#objectid)
 	- 12 bytes value

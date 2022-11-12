@@ -132,3 +132,63 @@
 - Hard to Index
 - Have own security so can be use to redact main collection and only allow to see View.
 
+
+# Developer Internals
+
+## BSON Data types
+- Reiterating earlier....![[Intro to Mongodb#^bson]]
+- Use proper type. 
+	- Using number enables performant range queries #recommendation 
+- Default number type in mongo shell is `double` #gotchas 
+- Unlike Javascript MongoDB has native date type
+- Special Type
+	- `MinKey`: Smallest value
+	- `MaxKey`: Largest Value
+	- `TimeStamp`: Used for internal use, like storing [[Replication#oplog.rs|Oplog]] entries.
+
+## Null Handling
+
+- In MongoDB missing field is same as null.
+- Projection in non existent field will return null.
+- If we query for null, it will return `null` as a value [^3] and missing field.
+- In aggregation, `$lookup` and `$graphLookup` will match null values from source to null values in destination.
+
+## Collation and sort ordering
+
+[collation in MongoDB](https://www.mongodb.com/docs/manual/reference/collation/)
+
+- All text is stored in Unicode - as `utf8`.
+- Default Sort order is unicode code point order. 
+	- Good for english but may not be good for other languages
+	- Each languages can have different ordering of arranging words and different things 
+- Collation specify language specific rules.
+- With that..
+	- Sorting order can be changed
+	- If case is considered or ignored
+	- If to match diacritics e.g. Jose = Josè?
+- For same field with different values, sorting will be
+	- `null<numbers<strings<objects` #gotchas 
+
+## Type Bracketing
+
+- When comparison MongoDB auto converts data types
+- Searching for 5 will find integer, long and double. But not string
+- Index stores the number mainly (along with type but not for finding and sorting purpose).
+- In `find` type if queries `{x:{$lt:5}}` null is not < 5
+- In `aggregation` type of queries `{$lt:["$x",5]}` null is < 5
+
+## Object Sorting
+
+- When objects are compared, field order matters
+- Objects are compared field by field
+- If names differ order is by first changed field in order they are inserted
+- values differ, order is by value
+
+## Locking
+
+- Single Document writes are atomic
+- Write operation takes locks for writes only reads can happen regardless. ![[Intro to Mongodb#MVCC|See MVCC]]
+- 
+
+
+[^3]: Having field with value null.

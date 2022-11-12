@@ -232,3 +232,60 @@
 - They are not Flexible as Data Access Layers, but provide first party support to ODM concept in some languages.
 
 # Schema Design
+
+## BSON
+- BSON is native format for Data
+- Drivers convert BSON to native objects (Maps/Dicts/JSONs etc)
+- Basically a list of named and typed values with length stored optionally
+- When scanning for values BSON tries to scan all fields one by one. And skips one that is not required in Search
+- Advantage of storing embedded documents using this point in mind is it can skip multiple fields together.
+	- E.g. When we have `address_locality`,`address_sublocality`,`address_state`,`address_country` in a flat document we always need to scan 4 fields even though we don't want any address fields.
+		- If we use `address:{locality,sublocality,state,country}` we can skip entire document, thus saving memory 
+### Containers: AKA Arrays and Embedded Documents
+- [BSON Spec](https://bsonspec.org/spec.html) lists Embedded document and array both stored as documents, it's just a byte separating them. #gotchas 
+- Just like Large and Flat documents, large arrays are also bad for performance.
+- Keep max 200 elements in array or max 200 fields in a document #recommendation 
+- Use `bsonsize` function in mongo shell to see the BSON size of an object #gotchas 
+- Use arrays when
+	- You need to `$push` to the end (i.e. Appending item regularly)
+	- You don't have unique identifiers
+	- Sparse data is not issue (Nulls in elements are tolerated)
+	- Values needed to be indexed.
+- When objects are used
+	- Projections are faster than `$filter`
+	- Querying single member is faster.
+
+## RDBMS vs Document DB
+- RDBMS are designed based on shape of data, not how they are intended to use.
+	- Data stored on different places based on their property
+	- Mapping is often required
+	- Not always a faster and straight forward retrievals 
+	- Often require Transaction to update related data together
+- Document DBs should be designed based on how they are intended to use.
+	- Data should be stored in same document according to usage patterns.
+	- Mapping is not required, embedded document is often used to denote some relationship.
+	- Designed to be faster and straightforward retrievals.
+	- Single atomic update to update related data.
+
+## To Link or To Embed
+
+### Terminology
+- Parent document: The document which is being queried to satisfy the operation.
+	- E.g. Order, Movie, Football Club.
+- Child document: The document which is not main part of the operation, but linked with parent document to provide extra information, it may have own lifecycle different to parent.
+	- E.g. Address In the Order, Actor in the movie, Player or manager in the football club.
+
+- Embed: Have a subdocument in main document
+- Link: Have an id in main document which points to another document.
+
+### Considerations #recommendation 
+- Rule of thumb: If a parent document should not be updated when child document is updated, consider embedding #recommendation 
+	- E.g. Address in Order, should always be embedded to know the historical data.
+- If parent document must be updated when child updates itself, consider linking.
+	- E.g. An actor changing their name should be updated in movies.
+		- Like Ellen Page changed to Elliot Page is reflected in all their movies
+- If Parent Document only needs some information about child which is rarely changed consider partial embedding with `_id` of child to query other data.
+	- E.g. A players' name, height, national team etc does not change even if they change clubs, places or even appearances. In such case the unchanging information can be embedded, also we should have `_id` of the player in embedded document so that we can link or aggregate all data of the player.
+- If searching within the children are essential, consider embedding.
+- Even if embedding, consider adding `_id` field of child to access whole document of child. #recommendation 
+

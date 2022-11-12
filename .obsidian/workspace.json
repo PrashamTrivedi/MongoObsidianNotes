@@ -75,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "idem",
+                "query": "tag:#recommendation",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,8 +92,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -188,13 +187,13 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "94a34766bddad00b",
+  "active": "133ab85df6ecd04f",
   "lastOpenFiles": [
-    "PSTT/Replication.md",
+    "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Replication.md",
     "PSTT/Mongod.md",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Optimizing Storage.md",
     "Slow Query.md",
     "PSTT/Sharding.md",
     "PSTT/Diagnostic And Debugging.md",

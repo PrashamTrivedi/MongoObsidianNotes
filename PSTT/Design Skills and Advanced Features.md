@@ -231,3 +231,4 @@
 - Custom CODECs allow developers to define custom mapping.
 - They are not Flexible as Data Access Layers, but provide first party support to ODM concept in some languages.
 
+# Schema Design

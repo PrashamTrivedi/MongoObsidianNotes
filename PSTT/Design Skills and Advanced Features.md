@@ -285,7 +285,7 @@
 	- E.g. An actor changing their name should be updated in movies.
 		- Like Ellen Page changed to Elliot Page is reflected in all their movies
 - If Parent Document only needs some information about child which is rarely changed consider partial embedding with `_id` of child to query other data.
-	- E.g. A players' name, height, national team etc does not change even if they change clubs, places or even appearances. In such case the unchanging information can be embedded, also we should have `_id` of the player in embedded document so that we can link or aggregate all data of the player.
+	- E.g. A players' name, height, national team etc does not change even if they change clubs, places or even appearances. In such case the unchanging information can be embedded, also we should have `_id` of the player in embedded document so that we can link or aggregate all data of the player. ^subsetPattern
 - If searching within the children are essential, consider embedding.
 - Even if embedding, consider adding `_id` field of child to access whole document of child. #recommendation 
 
@@ -293,9 +293,10 @@
 - Payload fields: Fields where values are there to storage or retrieval
 	- Just there for storage and retrieval, not playing any part on workflow.
 	- E.g. About field of a profile.
-- Process fields: Metadata we examine in Database
+- Process fields: Metadata we examine in Database 
 	- The fields who are used in querying, aggregating or deriving other data.
 	- E.g. Address of profile, used to get nearby users or DOB from which age is calculated to provide age appropriate content.
+
 
 ## Dynamic Models
 
@@ -349,5 +350,19 @@
 	- E.g. Live score (Esp in slow-er sports like football) where there are limited process to write, but unlimited readers.
 - Sometimes we may require to update some additional summary records too
 
+
+### Versioning Pattern
+- Good example of payload vs processing.
+	- For current version it's processing, for previous versions is mostly payload
+
+### The Subset pattern
+- Using link to other record
+- Maintain a subset of whole child data embedded for speed.
+- Example![[#^subsetPattern]]
+### Outlier or overspill pattern.
+
+- Like [[#Bucket pattern]], a new record if too many items
+- There is a main record and another flag to say if there is an overspill situation.
+- Like IMDB, movie information embeds main cast and crew, and links other cast and crew (a bigger information) in separate document.
 
 

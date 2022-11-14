@@ -47,6 +47,19 @@
             }
           },
           {
+            "id": "62d84d372fe51b4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Operational Skills.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "8340abc678cbada3",
             "type": "leaf",
             "state": {
@@ -86,7 +99,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -152,7 +165,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/PSTT.md",
+                "file": "PSTT/Operational Skills.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/PSTT.md",
+                "file": "PSTT/Operational Skills.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -192,7 +205,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/PSTT.md"
+                "file": "PSTT/Operational Skills.md"
               }
             }
           },
@@ -227,8 +240,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "133ab85df6ecd04f",
+  "active": "62d84d372fe51b4f",
   "lastOpenFiles": [
+    "PSTT/PSTT.md",
     "PSTT/Internals.md",
     "PSTT/Diagnostic And Debugging.md",
     "PSTT/Design Skills and Advanced Features.md",
@@ -237,7 +251,6 @@
     "PSTT/Replication.md",
     "PSTT/Mongod.md",
     "Slow Query.md",
-    "PSTT/Sharding.md",
-    "PSTT/PSTT.md"
+    "PSTT/Sharding.md"
   ]
 }

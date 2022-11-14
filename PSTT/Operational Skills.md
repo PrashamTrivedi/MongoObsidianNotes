@@ -44,3 +44,22 @@
 
 # Logs And Metrics
 
+## Access the logs
+
+- File System: `/var/log/mongodb/mongodb.log`, 
+	- or whatever is provided via command line
+	- Or whatever is provided in config file.
+	Default location of config files ![[Mongod#Location of config file]]
+- Hosted in Atlas: Download via UI or APIs
+- Database: Access with `getLog` command
+![[Optimizing Storage#^dbLogs]]
+
+![[Mongod#Profiler]]
+
+# Finding Slow Ops in Atlas
+
+- Performance Advisor (Not available in free tier)
+- Real time performance panel 
+- Query Profile
+
+# Identifying Common Performance Issues

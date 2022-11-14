@@ -146,7 +146,7 @@ flowchart RL
 - Throughput: Queries/s
 - Latency: Time to return
 - Checkpoint may queue impacting latency
-- 
+
 
 
 

@@ -125,7 +125,7 @@ These messages have verbosity value attached to it. `-1` means inherit from pare
 
 Profiler is used to measure db performances. Most of the time logs don't reveal whole story. Profilers are enabled at database level so profiling can be done separately.
 
-When enabled, profiler restores data for all operations of given db and creates a new collection called `system.profile`. This operation will do profiling and hold data on CRUD operations, Admin Operations and Config Options. This profiler is a capped collection, the capping is 10MB max. ^systemProfileCollection
+When enabled, profiler writes data for all operations of given db and creates a new collection called `system.profile`. This operation will do profiling and hold data on CRUD operations, Admin Operations and Config Options. This profiler is a capped collection, the capping is 10MB max. ^systemProfileCollection
 
 Three settings values.
 
@@ -140,6 +140,8 @@ Three settings values.
   - `slowms` indicates the maximum time query should take before it is considered slow. ^slowMs
 - We can set profiler level with `db.setProfilingLevel(profileLevel, {ProfileParams})`.
   - We can set `slowms` using this method call.
+- Profiler adds additional overhead for all operations, so it's not recommended to keep this turning.
+- Recommend to read logs if using 4.4+ #recommendation 
 
 ## Authentication & Authorization
 

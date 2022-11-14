@@ -229,7 +229,7 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 	- [[Mongod#Profiler|Profiler]]
 		- Profiling is not available in Atlas Shared instances.
 
-- DB Log
+- DB Log ^dbLogs
 	- `db.adminCommand({getLog:'global'})`
 		- Gets last 1024 entries
 		- Currently they are JSON but before 4.4 they were plaintext. #version #gotchas

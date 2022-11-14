@@ -13,7 +13,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Optimizing Storage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4b88098f89fd826",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Diagnostic And Debugging.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8340abc678cbada3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Optimizing Storage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -46,7 +72,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -75,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "upsert",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,8 +119,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -113,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md"
+                "file": "PSTT/Diagnostic And Debugging.md"
               }
             }
           },
@@ -188,16 +214,16 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "94a34766bddad00b",
+  "active": "b4b88098f89fd826",
   "lastOpenFiles": [
-    "PSTT/Intro to Mongodb.md",
-    "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Intro to Mongodb.md",
     "PSTT/Replication.md",
     "PSTT/Mongod.md",
     "Slow Query.md",
     "PSTT/Sharding.md",
-    "PSTT/Diagnostic And Debugging.md",
     "PSTT/PSTT.md",
     "Untitled.md"
   ]

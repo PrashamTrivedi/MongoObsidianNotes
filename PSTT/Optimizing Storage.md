@@ -198,7 +198,7 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 		- A new relevant index is being added in that collection
 		- The server is restarted.
 - If someone wants to use the index forcefully, [`hint` method](https://www.mongodb.com/docs/manual/reference/method/cursor.hint/) should be used.
-- Index can be used for Regex  ^regexIndex
+- Index can be used for Regex...Only if  ^regexIndex
 	- If anchored at start (Like : `{name:/^Hon/}`)
 	- Is case sensitive
 	- Mostly a range query.

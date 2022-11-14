@@ -295,9 +295,9 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 		- Blocking stages wait for all document to enter in the stage to start processing.
 
 
-## Aggregation in [[Sharding|Sharded cluster]]
+## Aggregation in Sharded cluster
 
-- On sharded clusters, operations run in parallel where possible.
+- On [[Sharding|sharded clusters]], operations run in parallel where possible.
 - Combining operations run in different location
 	- An easy merge operation which require little to no calculation run on [[Sharding#`mongos`|`mongos`]]
 	- Other calculations can happen on primary shard or random shard depending on MongoDB server version and operation.

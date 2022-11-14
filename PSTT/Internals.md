@@ -3,7 +3,7 @@
 - Data structure is similar to B+ tree #documentTodo 
 - Responsible for storing data on disk and retrieving it by PK.
 - It's a key value database
-- For document it stored as key-value and for index it's stored as indexValue as key and document as value. #assumption ^wtKeyValDocIndex
+- For document it stored as key-value and for index it's stored as indexValue as key and document as value. ^wtKeyValDocIndex
 - Supports Transactions
 	- Mongod is consumer of these transactions to create atomically new document and inserting corresponding indexes
 - Only writes a new document, never updates an existing one in place. Thus supporting [[Intro to Mongodb#MVCC|MVCC]]
@@ -16,23 +16,24 @@ flowchart RL
 		op1(`mongod`\noperation)
 	end
 	subgraph memory
-		wtCache[WiredTiger\nCache]
-		fsCache[FS\nCache]
-		op1-->wtCache
-		wtCache-->fsCache
+		wtCache[WiredTiger\nCache\nUncompressed]
+		fsCache[FS\nCache\nCompressed]
+		op1<-->wtCache
+		wtCache<-->fsCache
 	end
 	subgraph disk
-		file[(file)]
-		fsCache-->file
+		file[(file\nCcompressed)]
+		fsCache<-->file
 	end
 
 ```
 
 ## Compression in storage
 
-- As noted ![[#^wtKeyValDocIndex]]
+- As noted ![[#^wtKeyValDocIndex]] ^f4b60e
 	- WT doesn't differentiate data it stores, unless for compression
-- Collection files use block-store compression
+- Collection files use block-store compression when written in disk but uncompressed in WiredTiger Cache
+	- Snappy is default but can use Zlib, Zstd or leave uncompressed
 - Index files use prefix compression
 	- use         0 => use
 	- used        1 => 0d
@@ -55,6 +56,7 @@ flowchart RL
 	- After version 4.2 skip list is built as field level changes #version #gotchas 
 
 ## Cache Pressure
+- ![[Operational Skills#^defaultCacheSize]]
 - If we build too many updates in RAM before we are able to write in disk, we are creating pressure on cache. This is still a WT cache.
 - This can happen because of various reasons like..
 	- Someone has opened a snapshot cursor which hasn't closed for a long time
@@ -126,7 +128,7 @@ flowchart RL
 [^1]: Application threads are those which are used by regular applications to read and write the data, not the actual application threads. This blocks regular operations.
 
 
-### Tuning the cache
+## Tuning the cache
 
 - Avoid changing anything in the cache unless...
 	- Customer is having issues

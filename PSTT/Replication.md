@@ -8,11 +8,10 @@ Groups of `mongod` that share same information between them. They can be either 
 
 The replication from primary to secondary nodes are done asynchronously. The replication protocol is written such a way that secondary versions. There are two versions of the protocol, PV1 and PV0 (`P`rotocol `V`ersion `1` or `0`). The difference between the protocols is the way durability and availability is forced throughout the set. PV1 is default version, which is based on [RAFT Protocol](http://thesecretlivesofdata.com/raft/) Using [Raft Consensus Algorithm](https://raft.github.io/).
 
-{{< callout bg-color="#6ba311" text=`Below is my understanding of how RAFT works, this has becoming standard for many databases which supports replica sets. This is not specific to MongoDB.` >}}
+>[!note]- RAFT
+>In RAFT there are some election mechanism happening between available nodes. In this election mechanism, all nodes are given random timeout, which consists of election cycle. At the end of first election cycle one or more nodes announce themselves as candidate. As soon as a node becomes candidate, it asks other nodes for votes. All non-candidate nodes vote for exact one node on first-come first-serve basis. The candidate node receives most votes become primary and other nodes become follower.
+>Clients connect to primary node and send write command to it. Primary node propagate all write commands to follower nodes. Only when the majority of nodes acknowledge of update command, Primary node acknowledges the write operation.
 
-{{< callout bg-color="#6ba311" text=`In RAFT there are some election mechanism happening between available nodes. In this election mechanism, all nodes are given random timeout, which consists of election cycle. At the end of first election cycle one or more nodes announce themselves as candidate. As soon as a node becomes candidate, it asks other nodes for votes. All non-candidate nodes vote for exact one node on first-come first-serve basis. The candidate node receives most votes become primary and other nodes become follower.` >}}
-
-{{< callout bg-color="#6ba311" text=`Clients connect to primary node and send write command to it. Primary node propagate all write commands to follower nodes. Only when the majority of nodes acknowledge of update command, Primary node acknowledges the write operation.` >}}
 
 ### PV1 in MongoDB
 
@@ -55,7 +54,7 @@ The topology of replica set is defined one of the nodes, and shared between node
 - `db.serverStatus()['repl']`: Same as `rs.isMaster()` except it prints `rbid` value which is the number of rollbacks in current node.
 - `rs.printReplicationInfo()`: Prints data about oplog for current node.
 - `rs.stepDown()`: Should be called from master. Steps down current node as master to force election.
-{{< callout bg-color="#ea5d5d" text="During one of the labs, I found a node was in `STARTUP2` stage longer than 5 mins. According to the [doc](https://www.MongoDB.com/docs/manual/reference/replica-states/) `STARTUP2` node is started, joined the replica set and running sync. However, some tests were failing because if `STARTUP2`. I killed the node by getting PID of failing node by calling `fuser {port}/tcp` (or `lsof -i:{port}`), killing that process and restarting it. ">}}
+
 
 ## Replication Configuration
 
@@ -85,13 +84,18 @@ The topology of replica set is defined one of the nodes, and shared between node
 ### Reconfiguration of replica set without stopping any nodes
 
 Here are steps to reconfigure replica set.
-{{< callout bg-color="red" text="Reconfiguration must be done from master node. Secondary node can not reconfigure themselves" >}}
+
+>[!warning]
+>Reconfiguration must be done from master node. Secondary node can not reconfigure themselves
+
 
 1. Get replica set configuration from `rs.conf()`. And store it in a variable.(e.g. `cfg=rs.conf()`)
 2. Change values of configuration on the fly. (e.g.: `cfg.members[i].vote=0` or `cfg.members[2].hidden=true`.)
 3. Reapply configuration by calling `rs.reconfig()` and pass the variable.
 
-{{< callout text="If the configuration changes are not valid, Reconfiguration will not be successful and will keep reapplying until stopped manually" >}}
+>[!warning]
+>If the configuration changes are not valid, Reconfiguration will not be successful and will keep reapplying until stopped manually
+
 
 ## oplog.rs
 
@@ -138,9 +142,12 @@ To notify write concerns in write operations, add `{writeConcern:{w,wtiemeout}}`
 - `wtimeout`: Time to wait for (In milliseconds) write concern before marking the write operation as failed.
   - Facing `wtimeout` does not mean the write operation is failed. It means the requested durability is not reached before the time.
 - `j`: If true, requires data is being written to on disk journal before acknowledgement.
-  - Starting with (3.2.6), this value is set true if `w` (or write concern) is set as `majority`
+  - Starting with (3.2.6), this value is set true if `w` (or write concern) is set as `majority` #version #gotchas 
 
-**Note about write concern and voting members**: If write concern is specified as `majority`, only voting members' acknowledgement will be counted. If write concern is specified as number, non voting members' acknowledgements will also be counted.
+> [!tip]
+> If write concern is specified as `majority`, only voting members' acknowledgement will be counted. If write concern is specified as number, non voting members' acknowledgements will also be counted.
+
+
 
 
 [^3]: Durability means write safe and do not disappear even after database servers crash.

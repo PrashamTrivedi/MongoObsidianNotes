@@ -173,7 +173,7 @@ Authorization is what are the privileges of user?.
 
 ### Intra-cluster Authentication
 
-Two nodes in a cluster authenticate themselves to a [Replica set]({{< ref "replication.md" >}}). They can either use `SCRAM-SHA-1` by generating Key file and **sharing key file between the nodes**, (the approach used in replication labs). Or they can authenticate using `X.509` certificates which are issued by same authority and **can be separated from each other**.
+Two nodes in a cluster authenticate themselves to a [[Replication|Replica Set]]. They can either use `SCRAM-SHA-1` by generating Key file and **sharing key file between the nodes**, (the approach used in replication labs). Or they can authenticate using `X.509` certificates which are issued by same authority and **can be separated from each other**.
 
 ## Authorization
 
@@ -195,9 +195,12 @@ Two nodes in a cluster authenticate themselves to a [Replica set]({{< ref "repli
 Localhost Exception doesn't apply in following scenarios.
 
 - Once a user is created `Localhost Exception` doesn't apply, so it's desirable to create first user as admin privileges.
-- If we define any authentication mechanism, `Localhost Exception` doesn't apply when we connect to `mongod` or [`mongos`]({{< ref "sharding.md#mongos" >}}) using their replica set or shard URLs, localhost exception only applies if we connect to that specific node.
+- If we define any authentication mechanism, `Localhost Exception` doesn't apply when we connect to `mongod` or [[Sharding#`mongos`|mongos]] using their replica set or shard URLs, localhost exception only applies if we connect to that specific node.
 
-{{< callout bg-color="red" text="With Localhost exception we can create first user or role, as soon as we create either user or role, our localhost exception is disabled." >}}
+>[!warning]
+>With Localhost exception we can create first user or role, as soon as we create either user or role, our localhost exception is disabled.
+
+
 
 ### Role structure
 
@@ -308,4 +311,7 @@ Here are some tools and their description.
 - `mongorestore` and `mongodump`: Import and export dump files from MongoDB collection. These files are in `bson` format. These exports also have metadata file that indicates collection and indexes.
 - `mongoexport` and `mongoimport`: Import and export data from MongoDB collection. These files are in `json` or `csv` format (This will be decided by `--type` parameter). Defaults to `stdout` to export or `stdin` for import. To use files use `--out` parameter with `mongoexport` or `--file` parameter with `mongoimport`. These export doesn't have metadata files. So MongoDB has to be told where to import the collection (defaults to `test.{fileName}` collection)
 
-{{< callout bg-color="#00ED64" text="For `bson`, use `dump` and `restore` (DB Specific terms), and for `json` use `export` and `import`.(Data specific terms)" >}}
+>[!tip]- BSON and JSON export/import
+>For `bson`, use `dump` and `restore` (DB Specific terms), and for `json` use `export` and `import`.(Data specific terms)
+>
+

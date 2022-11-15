@@ -152,4 +152,98 @@ flowchart RL
 
 # Zero Downtime maintenance.
 
-- Concept of Rolling updates 
+## Concept of Rolling updates 
+- With Replica Set at centre stage of MongoDB. Making HA easy to manage.
+- Many events that may take down entire databases, will not harm MongoDB that much because of rolling updates.
+- Concept is as follows.
+	- There is an upgrade event X (Like Mongo version updates, Index rebuild etc)
+	- Perform this in one of the secondaries first.
+		- Mostly we need this secondary to be shutdown once and may be have it move away from the Replicaset to make the update independent of other nodes.
+		- If required test this change independently.
+	- Once upgrade is verified, do the same in other secondaries.
+	- When all secondaries have performed this operation, we will have a situation where all the secondaries are in desirable state.
+	- Step Down current primary, a new primary will be selected from other upgraded secondaries. 
+		- At that time we are running our replicaset to lates desirable state. 
+		- We are still not running to our full capacity as our old Primary is still down and not in desirable state.
+	- Upgrade old primary to desirable state, join it in replicaset, and now our rolling upgrade is finished without making entire replicaset down.
+```mermaid
+flowchart LR
+    A ~~~ B
+```
+- Initial Stage
+```mermaid
+flowchart TB
+	P[(Primary)]
+	S1[(Secondary)]
+	S2[(Secondary)]
+	style P fill:green, stroke: white
+	style S1 fill:green, stroke: yellow
+	style S2 fill:green, stroke: blue
+	P-->S1
+	P-->S2
+```
+
+
+- Rolling Upgrade Stage 1
+```mermaid
+flowchart TB
+	P[(Primary)]
+	S1[(Secondary)]
+	S2[(Secondary)]
+	style P fill:green, stroke: white
+	style S1 fill:red, stroke: yellow
+	style S2 fill:green, stroke: blue
+	P -. Perform an upgrade .- S1
+	P --> S2
+```
+
+
+- Rolling Upgrade Stage 2
+```mermaid
+flowchart TB
+	P[(Primary)]
+	S1[(Secondary)]
+	S2[(Secondary)]
+	style P fill:green, stroke: white
+	style S1 fill:green, stroke: yellow
+	style S2 fill:red, stroke: blue
+	P --> S1
+	P -. Perform an upgrade .- S2
+```
+- Rolling Upgrade Stage 3 At this point client is connected to latest desired state.
+```mermaid
+flowchart TD
+	P[(Secondary)]
+	S1[(Primary)]
+	S2[(Secondary)]
+	style P fill:green, stroke: white
+	style S1 fill:green, stroke: yellow
+	style S2 fill:green, stroke: blue
+	S1 --> P
+	S1 --> S2
+```
+
+- Rolling Upgrade Stage 4
+```mermaid
+flowchart TB
+	P[(Primary)]
+	S1[(Secondary)]
+	S2[(Secondary)]
+	style P fill:green, stroke: yellow
+	style S1 fill:red, stroke: white
+	style S2 fill:green, stroke: blue
+	P -. Perform an upgrade .- S1
+	P --> S2
+```
+- Final Stage At this point all our nodes are in desired state.
+```mermaid
+flowchart TB
+	P[(Primary)]
+	S1[(Secondary)]
+	S2[(Secondary)]
+	style P fill:green, stroke: yellow
+	style S1 fill:green, stroke: white
+	style S2 fill:green, stroke: blue
+	P --> S1
+	P --> S2
+```

@@ -1,4 +1,5 @@
 # Replication.
+To read more..I have added [[Replication]] notes from M103.
 
 ## Secondary Servers
 - ![[Replication#Other secondary node types]]
@@ -83,4 +84,5 @@ A primary becomes secondary when
 
 # Sharding
 
+To read more. I have added [[Sharding]] notes from M103
 

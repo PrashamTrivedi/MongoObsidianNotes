@@ -2,6 +2,20 @@ Sharding is a horizontal scaling of a database. Where instead of storing whole d
 
 Sharding comes with a complexity. After sharding is applied, client doesn't know which shard has the data that it's looking for, so either they have to make more round trips to get the exact data or server has to keep additional entries (or logic) to determine which shard hosts which data. Also adding a shard or removing shard can be cumbersome because of these entries or logic. This alone can make our app slower.
 
+## You don't need to shard always.
+
+A regular data-set doesn't need much sharding. Unless you're dealing with big-data issues.
+
+### How do you tell if you need your shard.
+- You have optimised all your queries, index and your schema AND
+- You still have resources maxed out.
+- You are reaching limits of vertical scaling that you can't afford to scale vertically.
+- Or you need to meet [[Operational Skills#^rto|RTO]] target and need parallelism to do so.
+
+
+
+
+
 ## `mongos`
 
 To fix this problem, instead of connecting to a specific shard, client should only connect to a process which has knowledge of which data is stored in which shard, that process can accept the query and then figures out which shard should receive the query. In MongoDB this process is called `mongos`. Client should connect a `mongos` instead of specific node or shard. And there can be any number of `mongos` processes.

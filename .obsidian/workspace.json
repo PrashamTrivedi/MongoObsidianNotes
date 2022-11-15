@@ -32,6 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4796808f95d38af0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Operational Skills.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -186,12 +199,12 @@
   "active": "795b40e5ec8590ca",
   "lastOpenFiles": [
     "PSTT/Production Ready Development.md",
+    "PSTT/Operational Skills.md",
     "PSTT/Sharding.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Replication.md",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Mongod.md",
-    "PSTT/Operational Skills.md",
     "PSTT/Diagnostic And Debugging.md",
     "PSTT/Internals.md",
     "PSTT/Optimizing Storage.md"

@@ -89,7 +89,7 @@
 	- How much data you can afford to lose?
 	- At what point in time must the backups be when we have data loss
 	- It's important to know how often can we make backups
-- RTP (Recovery Time Objective)
+- RTO (Recovery Time Objective) ^rto
 	- How long you can afford to be offline?
 	- How long should backups be restored?
 

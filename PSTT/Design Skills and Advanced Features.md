@@ -48,6 +48,8 @@
 
 - Notification is only sent when changes are written to majority of nodes.
 
+- Works on [[Production Ready Development#Oplog|Oplogs]]
+
 - Drivers handle this differently
 	- Block until an events is received or timed out
 	- Asks if there are any changes or not in the stream

@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "a464946ebfc3cc78",
+            "id": "795b40e5ec8590ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Sharding.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -89,7 +89,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Sharding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Sharding.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md"
+                "file": "PSTT/Sharding.md"
               }
             }
           },
@@ -183,17 +183,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "a464946ebfc3cc78",
+  "active": "795b40e5ec8590ca",
   "lastOpenFiles": [
-    "PSTT/Replication.md",
     "PSTT/Production Ready Development.md",
+    "PSTT/Sharding.md",
     "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Replication.md",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Mongod.md",
     "PSTT/Operational Skills.md",
     "PSTT/Diagnostic And Debugging.md",
     "PSTT/Internals.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/PSTT.md"
+    "PSTT/Optimizing Storage.md"
   ]
 }

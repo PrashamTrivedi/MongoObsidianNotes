@@ -52,6 +52,7 @@ Sharded clusters will also have primary shards, where all non-sharded collection
 
 A shard key (or set of keys) determines on which chunk the data must reside. Based on that, on write operation `mongos` stores given document on given chunk. Shard Key must be present in every new document write. Shard Key must be indexed before we define these keys as shard keys. 
 
+
 ### Targeted queries
 
 Queries that include shard key, or in compound shard keys queries that include prefix (e.g. for index that includes keys a, b and c, queries in order of a, b or a, b, c will include prefix.) will be targeted queries as they are being targeted to one or predefined number of shards.
@@ -80,7 +81,7 @@ Hashed shard key is a key where underlying index is hashed. With hashed shard ke
 
 #### Considerations
 
-- Hashed shard keys are not performant on ranges. This involves [scatter and gather](#scatter-gather)
+- Hashed shard keys are not performant on ranges. This involves [[#Scatter Gather]]
 - Hashed shard keys can not support zoned sharding or geographically isolated reads.
 - Hashed shard key must be single non-array, non-object field.
 - Hashed shard key can not support index performance gain.

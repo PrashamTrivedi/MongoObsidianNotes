@@ -39,7 +39,7 @@
 
 ## Change Streams
 
-- Like triggers in SQL databases
+- Like triggers in SQL database
 - Listen for writes to a Document, Collection, Database, Replicaset, Shards or Instance
 	- Can filter what kind of notification we want to receive
 	- Can receive whole or delta

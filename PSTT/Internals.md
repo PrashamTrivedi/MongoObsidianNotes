@@ -247,3 +247,7 @@ flowchart TB
 	P --> S1
 	P --> S2
 ```
+- To make this seamless and automated orchestration with no downtime, use 
+	- Atlas
+	- Cloud Manager
+	- Ops manager

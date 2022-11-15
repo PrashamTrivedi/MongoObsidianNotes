@@ -33,7 +33,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -88,7 +89,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Production Ready Development.md",
+                "file": "PSTT/Replication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Production Ready Development.md",
+                "file": "PSTT/Replication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Production Ready Development.md"
+                "file": "PSTT/Replication.md"
               }
             }
           },
@@ -182,10 +183,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2fcbde6b45e79ba0",
+  "active": "a464946ebfc3cc78",
   "lastOpenFiles": [
-    "PSTT/Replication.md",
     "PSTT/Production Ready Development.md",
+    "PSTT/Replication.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Mongod.md",

@@ -1,7 +1,6 @@
 # Replication.
 
 ## Secondary Servers
-
 - ![[Replication#Other secondary node types]]
 	- PSTT Special: Delayed and Hidden members considered legacy (In Mongo University Course they are covering old courses) and should not be used
 		- Hidden members were there to isolate read workload from regular app and for other (analytics type) workloads.
@@ -29,6 +28,7 @@
 - Secondaries also record their own Oplog like primaries
 - Secondaries request time after T
 - Primaries know latest seen T for each secondary 
+- If a write concern is majority (or more than 1), primary syncs anything after T till a new write with majority write concern.
 - Oplog is Capped and read only ([[Replication#^oplogCapped|Read more]])
 - Oplog commands are idempotent, instead of running command as it is, oplog are storing command as state of data.
 	- e.g. Instead of storing `{$inc:{a:2}}` Oplog Stores `{$set:{a:4}}` provided in previous statement a is 1.
@@ -47,4 +47,39 @@
 		- Resumable on transient error
 		- Can copy oplog while initial sync
 		- Can use secondary as source.
+
+## Elections the simple version.
+
+- Before calling an actual election, secondary calls for mock election where it determines whether it can win an election or not.
+- Secondary misses the heartbeat from Primary
+- Secondary can contact majority of other secondaries.
+- That's where a secondary will propose an election and vote for itself.
+	- With an election term (more like election version)
+	- It will also state latest transaction time
+- The eligible secondary needs to have a vote and needs to have a priority 0.
+- Any node that can vote, will vote for first candidate whose message is received 
+	- Only if the candidate is at same or higher transaction time
+		- AKA Candidate knows much or more than receiving node.
+	- Or Only if it have not voted for itself or other primary
+	- If a receiver is primary, it will automatically step down at the time of actual election.
+
+### Onboarding a new primary
+- When a new secondary is selected, it goes through onboarding before it can accept writes.
+- It checks if other secondary has higher transaction time?
+	- If yes, it syncs the oplog from that secondary. [^1]
+- It checks if any secondary has higher priority than itself?
+	- It would call a "rigged" election so a higher priority node becomes primary and passes up up-to-date transaction
+
+[^1]: It is only time data is copied from secondary to primary.
+
+### Primary to secondary
+
+A primary becomes secondary when
+- It sees an election happening with greater version than that it was elected.
+	- e.g. If it sees an election happening at `5` and it was selected in `4` it steps down
+- Explicitly tell it to [[Replication#^stepDown|step down]].
+- It can no longer see the majority of secondaries.
+
+
+
 

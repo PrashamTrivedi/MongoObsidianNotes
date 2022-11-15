@@ -57,7 +57,7 @@ Among secondary node, there can be `arbiter` node, which can't hold any data, ca
   - Gives primary node with `primary` key, current node with `me` key.
 - `db.serverStatus()['repl']`: Same as `rs.isMaster()` except it prints `rbid` value which is the number of rollbacks in current node.
 - `rs.printReplicationInfo()`: Prints data about oplog for current node.
-- `rs.stepDown()`: Should be called from master. Steps down current node as master to force election.
+- `rs.stepDown()`: Should be called from master. Steps down current node as master to force election. ^stepDown
 
 
 ## Replication Configuration
@@ -71,7 +71,7 @@ Among secondary node, there can be `arbiter` node, which can't hold any data, ca
 
 - `_id`: Name of the replica sets
 - `version`: Incremented every time the replica set is changed. (Like new node added, removed)
-- `term`: (Added after MongoDB 4.4) Incremented every time a primary node is stepped down, and new primary node is elected. That primary node will increment the term. #version #gotchas 
+- `term`: (Added after MongoDB 4.4) Incremented every time a primary node is stepped down, and new primary node is elected. That primary node will increment the term. #version #gotchas  
   - The latest configuration will be determined from greater term value. If term is not present or have same value in all nodes, configuration with the greatest version will be considered latest.
 - `members`: List all members in Replica set.
   - `host`: Having host name and port.
@@ -146,7 +146,8 @@ To notify write concerns in write operations, add `{writeConcern:{w,wtiemeout}}`
 - `wtimeout`: Time to wait for (In milliseconds) write concern before marking the write operation as failed.
   - Facing `wtimeout` does not mean the write operation is failed. It means the requested durability is not reached before the time.
 - `j`: If true, requires data is being written to on disk journal before acknowledgement.
-  - Starting with (3.2.6), this value is set true if `w` (or write concern) is set as `majority` #version #gotchas 
+	- Having `j` true will increase durability.
+	- Starting with (3.2.6), this value is set true if `w` (or write concern) is set as `majority` #version #gotchas 
 
 > [!tip]
 > If write concern is specified as `majority`, only voting members' acknowledgement will be counted. If write concern is specified as number, non voting members' acknowledgements will also be counted.
@@ -170,7 +171,17 @@ It's acknowledgement for write concern, this specifies that the documents are on
 - `available`: Same as local for replica-set deployments. Default for read against secondary members.
 - `majority`: Returns the document only if the majority of nodes has acknowledged the write.
   - Only way the documents are lost when it's written to majority nodes, not written to other nodes and majority nodes go down.
-- `linearizable`: (Added in 3.4) Like `majority` it returns majority acknowledged writes, and it can go beyond that and can provide read-your-own-write (??). Also, `linearizable` is limited to single document read.
+- `snapshot`: Read what was there when query starts. 
+	- AKA data on the snapshot. Not the data being written when query was received in server.
+- `linearizable`: (Added in 3.4) Wait until majority is caught up till the time client sent the query.
+	- i.e. If by some chance a majority has not caught up with 1s of oplog, this read concern forces to wait till 1s before running this query.
+	- That guarantees that everything that has written before the query was fired, is synced in majority of nodes and considered in the query.
+	- Compared to `majority` it only queries what majority sees, if something is still in primary and not synced, that will miss out.
+
+>[!caution]
+> Customer must have some valid reasons to use `snapshot` or `linearizable` read concerns. `local` or `majority` will serve the purpose.
+
+
 
 ## Read Preferences
 
@@ -183,5 +194,6 @@ By default, apps read and write data to primary node, and it's replicated via [[
 - `secondary`: Routes read operations only to the secondary members in replica sets.
 - `secondaryPreferred`: Routes read operations from secondary, but if no secondary members are available, reads are routed through primary.
 - `nearest`: Routes read operations to the replica set node with the least network latency to the host, regardless of the member type. This supports geographically local read.
+- We can also specify tags if we want to read from specific secondaries.
 
 In above modes, if read preference is primary, that means secondaries are for HA only. And in all other modes, we may receive stale data.

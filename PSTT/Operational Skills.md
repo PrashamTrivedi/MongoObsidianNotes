@@ -63,3 +63,60 @@
 - Query Profile
 
 # Identifying Common Performance Issues
+
+## Identifying Document Contention
+- Symptom: 
+	- Some Slow Writes
+	- High CPU usage
+	- `writeConflict` in logs
+
+### Identifying Lock Contention
+- Before MongoDB 5, reads can be blocked
+- Tools
+	- Current Op
+	- LogFile
+- Symptom
+	- Many operations pausing simultaneously
+	- Many operations finishing at same time
+- Reason
+	- Some collection/db level operations are being done
+	- In older versions (below 4.2) creating foreground index.
+
+# Basic Backup Options
+
+- Backup plans require RPO and RTO
+- RPO (Recovery Point Objective)
+	- How much data you can afford to lose?
+	- At what point in time must the backups be when we have data loss
+	- It's important to know how often can we make backups
+- RTP (Recovery Time Objective)
+	- How long you can afford to be offline?
+	- How long should backups be restored?
+
+## Backup methods
+
+- MongoDB Atlas: Continuous Backups or cloud providers snapshot feature
+- MongoDB Cloud Manager or OPS manager: Backup Snapshot
+- Self Service approaches using MongoExport or MongoDump.
+
+| Considerations | Mongodump | File System | Cloud Manager | Ops Manager |
+| ----- | ------- | ------- | ------- | ------- |
+| Initial Complexity | Medium [^b] | High [^a] | Low | High |
+| Replica Set Point In Time | Yes | No | Yes | Yes |
+| Sharded Snapshot | No | No | Yes [^c] | Yes [^c] |
+| Restore Time | Slow | Fast | Medium | Medium |
+| Incremental | No | No | Yes | Yes |
+
+[^a]: We may need to find the location and pause the `mongod` to perform backup, or call `db.fsyncLock()`, copy files and call `db.fsyncUnlock()`. This will pause writes.
+[^b]: For sharding it may add some issues
+[^c]: For enterprise tools
+
+
+## Self Service backup options
+- Document Level
+	- Logical
+	- `mongodump` and `mongorestore`
+- File System Level
+	- Physical
+	- Copy Files
+	- Volume/Disk snapshots

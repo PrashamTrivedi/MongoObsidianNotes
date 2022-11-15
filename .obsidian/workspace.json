@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Operational Skills.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Operational Skills.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Operational Skills.md"
+                "file": "PSTT/Diagnostic And Debugging.md"
               }
             }
           },
@@ -199,9 +199,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "133ab85df6ecd04f",
+  "active": "bb74de5bfb931ad0",
   "lastOpenFiles": [
     "PSTT/Mongod.md",
     "PSTT/Diagnostic And Debugging.md",

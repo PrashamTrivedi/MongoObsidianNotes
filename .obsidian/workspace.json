@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Diagnostic And Debugging.md",
+                "file": "PSTT/Operational Skills.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -59,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Diagnostic And Debugging.md",
+                "file": "PSTT/Operational Skills.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Diagnostic And Debugging.md",
+                "file": "PSTT/Operational Skills.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Diagnostic And Debugging.md"
+                "file": "PSTT/Operational Skills.md"
               }
             }
           },
@@ -202,17 +201,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bb74de5bfb931ad0",
+  "active": "f3018d7049804e75",
   "lastOpenFiles": [
-    "PSTT/Mongod.md",
-    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Internals.md",
     "PSTT/Operational Skills.md",
     "PSTT/Optimizing Storage.md",
-    "PSTT/Internals.md",
+    "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Mongod.md",
     "PSTT/Replication.md",
     "PSTT/PSTT.md",
     "Readme.md",
-    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Intro to Mongodb.md"
   ]
 }

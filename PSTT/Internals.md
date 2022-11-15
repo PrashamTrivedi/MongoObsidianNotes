@@ -1,4 +1,4 @@
-# WiredTiger Internals
+	# WiredTiger Internals
 - Lowest component of MongoDB
 - Data structure is similar to B+ tree #documentTodo 
 - Responsible for storing data on disk and retrieving it by PK.

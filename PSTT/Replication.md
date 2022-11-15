@@ -21,12 +21,16 @@ Among secondary node, there can be `arbiter` node, which can't hold any data, ca
 
 ## Replica sets topology
 
-The list of replica set members and their configuration define their topology. Any changes in topology trigger election. Adding new nodes, Any nodes getting down or changing replica set configuration will be considered as topology change.
+- The list of replica set members and their configuration define their topology. 
+- Any changes in topology trigger election. 
+	- Adding new nodes, Any nodes getting down or changing replica set configuration will be considered as topology change.
 
-The topology of replica set is defined one of the nodes, and shared between nodes using replication mechanism.
+- The topology of replica set is defined one of the nodes, and shared between nodes using replication mechanism.
 
 ### Other secondary node types
 
+- `Priority 0 Secondary`: Just like regular nodes
+	- ![[#^priority0Nodes]]
 - `Hidden Nodes`: They can be specific secondary nodes that provides specific read-only workloads (like analytics), or have copies of data which are hidden from Application
 - `Delayed Nodes`: Hidden nodes can also be set with some delay in their replication. These can be called delayed nodes.
   - Delayed nodes can be useful to provide resilience. Any data corruption won't reach to delayed node before delayed time, which allows us to recover data from delayed node.
@@ -49,7 +53,7 @@ The topology of replica set is defined one of the nodes, and shared between node
   - Can check when sync was happened based on `lastHeartbeat` (Primary to secondary), or `lastHeartbeatRecv` (Secondary to Primary) values.
 - `rs.add({serverName}:{port})`: Adds a node (as secondary) to replica set. Should be called from master.
 - `rs.addArb({serverName}:{port})`: Adds an arbiter to replica set.
-- `rs.isMaster()`: Checks if current node is master or not.
+- `rs.isMaster()`: Checks if current node is master or not. ^rsIsMaster
   - Gives primary node with `primary` key, current node with `me` key.
 - `db.serverStatus()['repl']`: Same as `rs.isMaster()` except it prints `rbid` value which is the number of rollbacks in current node.
 - `rs.printReplicationInfo()`: Prints data about oplog for current node.
@@ -99,15 +103,15 @@ Here are steps to reconfigure replica set.
 
 ## oplog.rs
 
-When a node is connected to a replicaset, some collections are added to `local` database. Any data written in `local` database, as the name suggests, stays in local node and is not eligible for replication. Local database has many pre-added collections. One important collection is `oplog.rs`. This collection keeps information about oplogs.
+When a node is connected to a replicaset, some collections are added to `local` database. Any data written in `local` database, as the name suggests, stays in local node and is not eligible for replication. Local database has many pre-added collections. One important collection is `oplog.rs`. This collection keeps information about [[Production Ready Development#Oplog|oplogs]].
 
-This collection is memory capped. That means older entries in oplogs will be removed if memory is more than capped size. By default, capped size is 5% of disk space.[^2]. Oplog size can be configured by mentioning `replication.oplogSizeMB` in configuration file. Since oplog.rs is capped collection, once the limit is reached, the earliest entry will be overwritten with the newer oplog entries.
+This collection is read only and memory capped. That means older entries in oplogs will be removed if memory is more than capped size. By default, capped size is 5% of disk space. [^2]. Oplog size can be configured by mentioning `replication.oplogSizeMB` in configuration file. ^ Since oplog.rs is capped collection, once the limit is reached, the earliest entry will be overwritten with the newer oplog entries. ^oplogCapped
 
-Oplog size determines how long our node can be down and still be synced once they come back. Database write operations are written to the primary oplog and synced to secondary nodes. If one of the secondary node is down, primary will propagate oplog to other secondary nodes, once the downed secondary node comes back, this secondary node will be marked as recovery node. If the recovery node has oplog entry, and it's last oplog statement is found in other nodes, it will sync those oplog operations before being available.
+Oplog size determines how long our node can be down and still be synced once they come back. Database write operations are written to the primary oplog and synced to secondary nodes. If one of the secondary node is down, primary will propagate oplog to other secondary nodes, once the downed secondary node comes back, this secondary node will be marked as recovery node. If the recovery node has oplog entry, and it's last oplog statement is found in other nodes, it will sync those oplog operations before being available. ^oplogRecovery
 
 In case the last oplog entry is recycled from all the other nodes, the recovery node can't be in sync. However, different nodes can have different oplog size, and they can have larger oplog, so that recovery for any node is possible.
 
-Sometimes an operation, while reducing number of commands and roundtrips, can generate many oplog entries. `updateMany` is one of them. The reason is all the bulk write operations should be idempotent.
+Sometimes an operation, while reducing number of commands and roundtrips, can generate many oplog entries. `updateMany` is one of them. The reason is all the bulk write operations should be idempotent. ^oplogIdempotent
 
 [^2]: For Latest cap size, please refer [Official Document](https://www.MongoDB.com/docs/manual/core/replica-set-oplog/#oplog-size)
 
@@ -170,7 +174,7 @@ It's acknowledgement for write concern, this specifies that the documents are on
 
 ## Read Preferences
 
-By default, apps read and write data to primary node, and it's replicated via oplog to secondaries. Read Preference allows apps to route read operations to specific members of replica set, it's mainly a driver side setting.
+By default, apps read and write data to primary node, and it's replicated via [[Production Ready Development#Oplog|oplog]] to secondaries. Read Preference allows apps to route read operations to specific members of replica set, it's mainly a driver side setting.
 
 ### Supported Read Preference modes
 

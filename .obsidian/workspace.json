@@ -21,38 +21,12 @@
             }
           },
           {
-            "id": "67e5dec06b06afec",
+            "id": "a464946ebfc3cc78",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Mongod.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c4577e03f79c4dbe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Mongod.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ce9cfe9541c3036",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Operational Skills.md",
+                "file": "PSTT/Replication.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#gotchas",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -202,25 +176,23 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "f3018d7049804e75",
+  "active": "2fcbde6b45e79ba0",
   "lastOpenFiles": [
-    "PSTT/PSTT.md",
-    "Untitled Diagram.svg",
-    "PSTT/Production Ready Development.md",
     "PSTT/Replication.md",
-    "PSTT/Mongod.md",
-    "PSTT/Optimizing Storage.md",
+    "PSTT/Production Ready Development.md",
     "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Intro to Mongodb.md",
+    "PSTT/Mongod.md",
+    "PSTT/Operational Skills.md",
+    "PSTT/Diagnostic And Debugging.md",
     "PSTT/Internals.md",
-    "2022-11-15.md",
-    "Drawings/Drawings.md"
+    "PSTT/Optimizing Storage.md",
+    "PSTT/PSTT.md"
   ]
 }

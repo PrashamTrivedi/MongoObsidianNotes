@@ -1,6 +1,4 @@
----
-aliases: DF100
----
+
 - Two things that are hard to do in distributed systems
 	- **Joins**: Database level joins are difficult when data we are joining is residing in different machines.
 	- **Unreliable Network Communications:** Unless a machine confirms or acknowledges the message, one machine can not know if the other machine is alive, processed all the messages properly or not.

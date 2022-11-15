@@ -1,6 +1,4 @@
----
-alias: DF200
----
+
 # Explaining Queries.
 
 - Can explain the query performance by using `.explain()` method on query or cursor. 

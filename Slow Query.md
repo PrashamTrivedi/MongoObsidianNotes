@@ -1,6 +1,8 @@
 
 ## Slow Query
 
+^fa88a1
+
 What is slow query?:
 - A query that takes more than desired time to complete and viable.
 - Blocking critical (or useful) user operations.

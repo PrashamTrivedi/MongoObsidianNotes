@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Drawings/Drawings.md",
+                "file": "PSTT/Internals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -76,10 +76,8 @@
             "id": "133ab85df6ecd04f",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -88,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "stream",
+                "query": "100ms",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,8 +102,19 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "7fe311206a9dbc59",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -125,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Drawings/Drawings.md",
+                "file": "PSTT/Internals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Drawings/Drawings.md",
+                "file": "PSTT/Internals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Drawings/Drawings.md"
+                "file": "PSTT/Internals.md"
               }
             }
           },
@@ -203,15 +212,15 @@
   },
   "active": "f3018d7049804e75",
   "lastOpenFiles": [
+    "PSTT/Mongod.md",
+    "2022-11-15.md",
+    "Untitled Diagram.svg",
+    "Drawings/Drawings.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Operational Skills.md",
     "PSTT/Internals.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Mongod.md",
-    "PSTT/Replication.md",
-    "PSTT/PSTT.md",
-    "Readme.md",
-    "PSTT/Intro to Mongodb.md"
+    "PSTT/Replication.md"
   ]
 }

@@ -150,3 +150,6 @@ flowchart RL
 
 
 
+# Zero Downtime maintenance.
+
+- Concept of Rolling updates 

@@ -24,9 +24,11 @@ To fix this problem, instead of connecting to a specific shard, client should on
 
 ### `mongos` and Sharding distribution
 
-`mongos` connects with configuration server which knows about which data is connected to which shard. `mongos` makes sure all the data is distributed proportionally across the shards. And config servers can move around data to make sure this thing.
+`mongos` connects with configuration server which knows about which data is connected to which shard. This data is versioned, the latest version is stored in all the shards. If `mongos` queries with old versions, shard reject that query and forces `mongos` to update the configuration to fetch  the latest sharding info. `mongos` makes sure all the data is distributed proportionally across the shards. And config servers can move around data to make sure this thing.
 
 `mongos` requires `configDB` to be specified. And they don't have the shards added automatically, we need to call `sh.addShard()` with replicaset to add that in shard.
+
+If a shard is down, ideally only a limited operation is down. Anything touches that shard, including [[#Targeted queries]] or [[#Scatter Gather]] queries involving said shard will fail.
 
 ## Configuration DB
 

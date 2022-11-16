@@ -190,8 +190,6 @@ Two nodes in a cluster authenticate themselves to a [[Replication|Replica Set]].
 
 ## Authorization
 
-^e7852b
-
 - RBAC is implemented
   - Each user has one or more roles
   - Each role has one or more privileges

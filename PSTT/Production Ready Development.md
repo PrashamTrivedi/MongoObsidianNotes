@@ -206,3 +206,10 @@ Originally from [here](https://notes.prashamhtrivedi.in/saa/encryption.html)
 	- On Atlas, Atlas with AWS IAM is preferrable
 	- Generate a password at install time
 	- Or expose a password using a secret store.
+
+## Authorization
+
+![[Mongod#Authorization]]
+
+### Document level security
+- Roles give us collection level security

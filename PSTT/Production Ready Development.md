@@ -148,3 +148,61 @@ To read more. I have added [[Sharding]] notes from M103
 	- All data can fit in RAM
 	- Small number of power users, means more CPU is available but less users
 	- We know how to write aggregation for parallelism.
+
+# Security
+
+## Keys and PKI
+
+Originally from [here](https://notes.prashamhtrivedi.in/saa/encryption.html)
+
+
+### Symmetric Encryption
+- Same key is used to encrypt and decrypt the data.
+- More easy to compute.
+- Key must be shared between parties. That makes the encryption useless.
+- Good for local encryption or disk encryption.
+
+### Asymmetric Encryption
+- Different key is used to encrypt and decrypt the data.
+- Two sets of keys: public key and private key.
+- Public keys are shared openly in the world.
+- Private keys are stored with the receiver.
+- Public keys are used to encrypt the data, and private keys are used to decrypt the data.
+- Signing
+	- When sending message, sender signs that message with the private key, and receiver can verify the sender using sender's public key.
+	- This is inverse of what discussed above, in signing encryption happens with private key and decryption happens with public key.
+		- Like when A is sending message to B.
+		- A encrypts the message using B's public key and signs this with A's private key.
+		- When B receives this, only B can read this message with his private key, and verify that it's sent by A by decrypting the signature using A's public key.
+
+### Certificate
+- A certificate says
+	- Who issued it
+	- When it was issued
+	- To whom it is issued
+	- The public key of the issued
+	- How long it will be valid
+- To request the certificate
+	- We create a certificate that mentions who we are, what we want to do and our public key
+	- We sign it using our private key
+	- We send it to Certificate Authority, who digests it, encrypts it and signs it.
+## Public Key Infrastructure
+
+- There are top level CAs whose information resides in OS and Browsers
+- They may issue certificate to be a CA for specific subdomain
+- There is a chaining involved
+	- E.g. My website can be signed by CA XYZ, their Certificate (which has CA rights) is signed by CA JKL who has a Certificate with CA rights which is signed by Verisign. 
+
+![[Mongod#MongoDB authentication mechanisms]]
+
+### What to use and when
+
+- For humans, individual logins are preferable
+	- LDAB/Kerberos is preferable because there are automatic revoking based on rules
+	- SCRAM is secure but not centralised, we need to add same users manually everywhere
+- For servers/services
+	- Should be hidden by humans
+	- Kerberos is great for windows service
+	- On Atlas, Atlas with AWS IAM is preferrable
+	- Generate a password at install time
+	- Or expose a password using a secret store.

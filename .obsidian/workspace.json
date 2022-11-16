@@ -45,6 +45,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d86948caad31fe43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Mongod.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -197,14 +210,14 @@
   },
   "active": "795b40e5ec8590ca",
   "lastOpenFiles": [
-    "2022-11-15.md",
+    "PSTT/Mongod.md",
     "PSTT/Production Ready Development.md",
+    "2022-11-15.md",
     "PSTT/Sharding.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Operational Skills.md",
     "PSTT/Replication.md",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Mongod.md",
     "PSTT/Diagnostic And Debugging.md",
     "PSTT/Internals.md"
   ]

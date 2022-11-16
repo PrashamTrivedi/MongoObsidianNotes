@@ -164,12 +164,25 @@ Authorization is what are the privileges of user?.
 - `SCRAM`(`S`alted `C`hallenge `R`esponse `A`uthentication `M`echanism): Default authentication mechanism.
   - Here MongoDB provides some challenge that user must respond to.
   - Equivalent to Password Authentication
+  - Client requests a unique value (Nonce) from server
+  - Server sends nonce back
+  - Client hashes password, adds nonce and hashes hashed password+nonce again
+  - Server has hashed password saved
+  - Upon receiving end, server picks hashed password and hashes it + nonce it has sent to client.
+  - If both the hashes are equal, the login is successful.
+
 - `X.509`: Uses X.509 certificate for authentication.
 
 #### Available in enterprise versions
 
 - `LDAP`(`L`ightweight `D`irectory `A`ccess `P`rotocall): Basis of Microsoft AD.
+	- LDAP is sending plaintext data by default, TLS is required to make it secure.
 - `KERBEROS`: Powerful authentication designed by MIT.
+	- Like `x509` certificates but they are very short lived.
+
+
+#### Available only in Atlas
+ - `MONGODB-AWS`: Authenticate using AWS IAM roles.
 
 ### Intra-cluster Authentication
 

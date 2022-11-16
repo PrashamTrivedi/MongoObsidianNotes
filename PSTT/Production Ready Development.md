@@ -213,3 +213,72 @@ Originally from [here](https://notes.prashamhtrivedi.in/saa/encryption.html)
 
 ### Document level security
 - Roles give us collection level security
+- If we need document level security following options are considered
+	1. Application level
+		- Application server decides what can given user/client app can view or not
+		- Application itself uses a single db user.
+	2. Using Views
+		- Create views which can give redacted view only collection
+		- Hard to index
+		- Good for data masking in APIs or BI users
+		- [[Design Skills and Advanced Features#Views|Another detail about view]].
+	3. Realm
+		- MongoDB realm manages Application users
+		- And provides rules for function based field level security
+
+## Encryption
+
+### Encryption in flight (or on the wire)
+
+- Data being transferred over network is encrypted
+- Options by MongoDB
+	- `requireTLS`: Clients must use TLS
+	- `preferTLS`: Clients should use TLS, internal process (like replication) should use TLS. Default mode is TLS
+	- `allowTLS`: Clients may use TLS, default mode is no TLS
+	- `disabled`: Server doesn't support TLS
+- Advices Network layer security (TLS), Always enabled in Atlas, and can't be disabled.
+
+### Encryption at rest (or in the disk)
+
+- Needs a secure way to store and manage a disk
+	- Means an external KMIP key vault
+	- Storing keys locally is not secure
+	- When using vault, MongoDB can rotate the key
+
+
+### Encryption in use
+- Relevant for developers
+- Used to store encrypted information on server
+- Server won't have decryption information
+- Only app will be able to decrypt it
+- In MongoDB 6.0, [Queryable Encryption](https://www.mongodb.com/products/queryable-encryption) is being developed in preview.
+
+- In MongoDB community
+	- Encryption function is exposed in driver
+- Enterprise and Atlas
+	- Define encrypted fields in JSONSchema and drivers do this automatically for you 
+	- Encrypts CRUD including query.
+
+- Storing client keys
+	- Hardcoded or local files
+	- Encrypted key/vault on server where each user/process can have their own key
+	- Master key is stored in KMS of cloud providers
+- Driver uses deterministic random encryption
+	- Deterministic: Same value is always encrypts same
+		- Make some analysis possible on encrypted data
+		- Allows speculative querying
+		- Indexes can be used on encrypted values
+
+## Auditing
+
+- Should be done only record human activities. 
+- Not the application activities.
+- It's not debugging tool. 
+- Recording intent of a human.
+- Can record successful or prevented operations
+- By default only audits where Security prevents a Non CRUD activity
+- Audit flushes disk before each operation
+	- So only audit ==ad-hoc== ==business valuable== information
+- Audit file writes are JSON or BSON and can be queried as normal
+- Redacting PII from debug log is hard
+	- MongoDB has a flag that turns values into *s 

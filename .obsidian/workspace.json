@@ -59,7 +59,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -86,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "view",
+                "query": "redac",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Production Ready Development.md",
+                "file": "PSTT/Mongod.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Production Ready Development.md",
+                "file": "PSTT/Mongod.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Production Ready Development.md"
+                "file": "PSTT/Mongod.md"
               }
             }
           },
@@ -208,13 +209,13 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2fcbde6b45e79ba0",
+  "active": "d86948caad31fe43",
   "lastOpenFiles": [
-    "PSTT/Mongod.md",
     "PSTT/Production Ready Development.md",
+    "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Mongod.md",
     "2022-11-15.md",
     "PSTT/Sharding.md",
-    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Operational Skills.md",
     "PSTT/Replication.md",
     "PSTT/Intro to Mongodb.md",

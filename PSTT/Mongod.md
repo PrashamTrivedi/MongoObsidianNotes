@@ -186,7 +186,9 @@ Authorization is what are the privileges of user?.
 
 ### Intra-cluster Authentication
 
-Two nodes in a cluster authenticate themselves to a [[Replication|Replica Set]]. They can either use `SCRAM-SHA-1` by generating Key file and **sharing key file between the nodes**, (the approach used in replication labs). Or they can authenticate using `X.509` certificates which are issued by same authority and **can be separated from each other**.
+- Two nodes in a cluster authenticate themselves to a [[Replication|Replica Set]]. They can either use `SCRAM-SHA-1` by generating Key file and **sharing key file between the nodes**, (the approach used in replication labs).
+	- If they use this key file mechanism user will be `__system@local` and password will be generated keyfile
+- Or they can authenticate using `X.509` certificates which are issued by same authority and **can be separated from each other**.
 
 ## Authorization
 

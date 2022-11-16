@@ -8,25 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f3018d7049804e75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Production Ready Development.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "795b40e5ec8590ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Sharding.md",
+                "file": "PSTT/Production Ready Development.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -114,7 +101,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -208,17 +195,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f3018d7049804e75",
+  "active": "795b40e5ec8590ca",
   "lastOpenFiles": [
+    "2022-11-15.md",
+    "PSTT/Production Ready Development.md",
     "PSTT/Sharding.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Operational Skills.md",
-    "PSTT/Production Ready Development.md",
     "PSTT/Replication.md",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Mongod.md",
     "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Internals.md",
-    "PSTT/Optimizing Storage.md"
+    "PSTT/Internals.md"
   ]
 }

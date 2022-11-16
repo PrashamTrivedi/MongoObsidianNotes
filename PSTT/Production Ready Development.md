@@ -133,3 +133,18 @@ To read more. I have added [[Sharding]] notes from M103
 	- Shard keys must be in query to take advantage
 
 ## Zone based sharding
+- Storing some shards in different zones (aka locations)
+- Telling the balancer to store something in specific shards
+- Used to store specific country's data in specific shard
+	- Useful for GDPR compliance
+	- Better for latency
+
+### Sharding for parallelism
+
+- Unusual but powerful case
+- Useful for reading data
+	- But not for OLTP or normal queries
+- Sometimes many shards in one server (called microsharding), works where
+	- All data can fit in RAM
+	- Small number of power users, means more CPU is available but less users
+	- We know how to write aggregation for parallelism.

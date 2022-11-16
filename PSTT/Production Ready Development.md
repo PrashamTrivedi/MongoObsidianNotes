@@ -92,4 +92,44 @@ To read more. I have added [[Sharding]] notes from M103
 	- A shard which does more work than others is called "hot shard".
 	- "hot shard" is not good, because if this shard is down, it impacts our app very badly.
 - Adding new shard is itself a challenge
-	- 
+	- Adding a new shard is simpler, but they are added as empty state
+	- Balancer will run the data and move the chunks, but it can take days of weeks.
+
+### Managed Sharding
+
+- It's a technique to avoid sharding pitfalls.
+	- Requires planning and efforts
+	- Requires code changes
+- Managed sharding works better when we have compound index.
+	- Calculate hash of one of the field with one of the passively compound number and have a modulo on that number.
+		- That passively compound number should be `2*3*4*5` or `2*3*4*5*7` 
+		- This gives an evenly distributed number with good enough cardinality and no monotonically increasing value
+	- Then the shardkey is hash of original field and other field instead of two original fields.
+	- At the time of the query, this hash value has to be queried and included in query.
+	- It's also advisable to add index on original fields as well for optimisation.
+
+### Presplitting the data
+
+- Balancer will split the data itself
+- MongoDB allows us to explicitly split chunks
+- We should turn off the balancer.
+- We will define shard limits and MongoDB will split the chunks as we insert the data
+- Shards will split instantaneously in newly added shards if shard keys are planned correctly.
+	- e.g. If shard key is timestamp, and on of our chunks define min timestamp is week from now, any data which contains this future timestamp will be written in new shard.
+	- Old shards will be effectively only do updates and deletion from that point forward
+- With managed sharding we can split 2,3,4,5 or 7 shards on the fly.
+
+### Pros and Cons
+
+- Pros
+	- Scale out instantly
+	- Always well balanced
+	- Can downgrade older shards
+- Cons
+	- Requires some sort of planning
+	- We need to scale out atleast twice
+		- If I have 3 servers, my load can't be served with 4 servers instantaneously. 6 will do justice
+	- Needs additional coding from developer
+	- Shard keys must be in query to take advantage
+
+## Zone based sharding

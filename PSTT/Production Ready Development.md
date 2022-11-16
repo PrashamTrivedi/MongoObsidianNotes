@@ -86,3 +86,10 @@ A primary becomes secondary when
 
 To read more. I have added [[Sharding]] notes from M103
 
+## Common Sharding Challenges
+
+- We may have badly distributed data
+	- A shard which does more work than others is called "hot shard".
+	- "hot shard" is not good, because if this shard is down, it impacts our app very badly.
+- Adding new shard is itself a challenge
+	- 

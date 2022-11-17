@@ -21,58 +21,6 @@
             }
           },
           {
-            "id": "c057ff3f3173bd4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4796808f95d38af0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Operational Skills.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d86948caad31fe43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Mongod.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8e5d7f42e295fa17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f488dd18fd8089a0",
             "type": "leaf",
             "state": {
@@ -85,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -245,17 +192,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8e5d7f42e295fa17",
+  "active": "795b40e5ec8590ca",
   "lastOpenFiles": [
-    "PSTT/Untitled Diagram.svg",
+    "Drawings/mongot(aka Atlas Search).svg",
     "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Design Skills and Advanced Features.md",
+    "Drawings/mongot(aka Atlas Search).drawio.svg",
     "Drawings/Drawings.md",
+    "PSTT/Untitled Diagram.svg",
     "Untitled Diagram.svg",
     "Untitled Diagram 1.svg",
     "PSTT/Production Ready Development.md",
-    "PSTT/Mongod.md",
-    "PSTT/Design Skills and Advanced Features.md",
-    "2022-11-15.md",
-    "PSTT/Sharding.md"
+    "PSTT/Mongod.md"
   ]
 }

@@ -64,4 +64,54 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 - ==Consider index size, it can grow very large==
 - `nGrams` create larger index then `edgeGrams`
 - The smaller the gram size, larger the index
-- 
+
+## Highlight
+
+- Use `highlight:{path:}` to highlight the relevant information
+- And in projection use `$meta: 'searchHighlights'` in your desired field to show highlights.
+- It shows what matched, not what was queried
+- Adds latency
+- Does not work with autocomplete index
+- By default lucene stores original data to highlight, so if highlight is not used, remove `store` option to preserve some space.
+
+
+## Synonyms
+
+- [Synonyms Document](https://www.mongodb.com/docs/atlas/atlas-search/synonyms/)
+- We need to have a collection defining synonyms.
+- We can't do fuzzy search with synonyms.
+- Two types of synonyms.
+	- `equivalent`: The terms defined in array `synonyms` are all equivalent to each other.
+		- E.g.: `["car","vehicle","automobile"]` are synonyms of each other and can be queried in place of each other.
+		 ```json
+		{
+		  "mappingType": "equivalent",
+		  "synonyms": ["car", "vehicle", "automobile"] 
+		}  
+		```
+	- `explicit`: The terms defined in array `synonyms` are not equivalent to each other but equivalent to the term defined in `input`.
+		- E.g.: `["maruti","tata","hundai"]` are type of `car`s.
+		```json
+		{
+		  "mappingType": "explicit",
+		  "input": ["beer"],
+		  "synonyms": ["beer", "brew", "pint"]
+		}
+		```
+- These kind of synonyms should be separate documents in single collection.
+- Once we define this collection, we should (re)define our index to include synonyms as follows
+```json
+{
+  ...
+  "synonyms": [
+    {
+      "analyzer": "lucene.english",//OR WHATEVER TEXT ANALYZER YOU WANT TO USE
+      "name": "{A_UNIQUE_NAME_FOR_YOUR_SYNONYMS}",
+      "source": {
+        "collection": "{COLLECTION_CONTAINING_SYNONYMS}"
+      }
+    }
+  ]
+  ...
+}
+```

@@ -55,4 +55,13 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 ## Autocompletes
 
 - [Autocomplete Docs](https://www.mongodb.com/docs/atlas/atlas-search/autocomplete/) 
+- When string is broken down into tokens for autocomplete, we use one of two methods.
+	- **nGram**: All sets of consecutive letters which ==can appear anywhere in the string, also including whitespace==. 
+	- **egdeGram**: Always search at start of the word.
+
+### Tips for using Autocomplete
+
+- ==Consider index size, it can grow very large==
+- `nGrams` create larger index then `edgeGrams`
+- The smaller the gram size, larger the index
 - 

@@ -22,3 +22,18 @@
 | Array | Yes | type of elements |
 | ObjectId | No | objectid |
 | Boolean | No | boolean |
+
+
+- [Atlas search docs](https://www.mongodb.com/docs/atlas/atlas-search/)
+- [Atlas Analyzers](https://www.mongodb.com/docs/atlas/atlas-search/analyzers/)
+
+| Analyzer | Description |
+| --- | --- |
+| Standard | Uses the default analyzer for all Atlas Search indexes and queries. |
+| Simple | Divides text into searchable terms wherever it finds a non-letter character. |
+| Whitespace | Divides text into searchable terms wherever it finds a whitespace character. | 
+| Keyword | Keeps the text as it is |
+| Language | Provides a set of language-specific text analyzers. |
+
+- [Custom Analyzers](https://www.mongodb.com/docs/atlas/atlas-search/analyzers/custom/)
+- 

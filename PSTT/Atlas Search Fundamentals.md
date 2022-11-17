@@ -11,7 +11,7 @@
 
 ## Type Mapping
 
-| BSON Type | Included in Dynamic Mapping | Atlas Search Type |
+| BSON Type | Included in Dynamic Mapping[^2] | Atlas Search Type |
 | --- | --- | --- |
 | Double | Yes | number |
 | 32 bit integer | Yes | number |
@@ -20,8 +20,11 @@
 | Date | Yes | date |
 | Object | Yes | document |
 | Array | Yes | type of elements |
-| ObjectId | No | objectid |
-| Boolean | No | boolean |
+| ObjectId | No[^1] | objectid |
+| Boolean | No [^1]| boolean |
+
+[^1]: Object Id and Booleans are not included in Dynamic mapping because usually you don't do any search or range, you are doing equality on them.
+[^2]: Not included in dynamic mapping does not mean it can't be indexed at all.
 
 
 - [Atlas search docs](https://www.mongodb.com/docs/atlas/atlas-search/)
@@ -36,4 +39,15 @@
 | Language | Provides a set of language-specific text analyzers. |
 
 - [Custom Analyzers](https://www.mongodb.com/docs/atlas/atlas-search/analyzers/custom/)
-- 
+- [Operators and collectors](https://www.mongodb.com/docs/atlas/atlas-search/operators-and-collectors/)
+
+
+## Combining Operators
+
+Below operators must be included in [`compound`](https://www.mongodb.com/docs/atlas/atlas-search/compound/#std-label-compound-ref) operator.
+
+- `must`: All Clauses have to match, ==equivalent to AND==
+- `mustNot`: None of the clauses have to match, ==equivalent to NOT AND==
+- `should`: N terms have to match, N defaults to 0, if something matches the score increases.
+- `filter`: Same as must but not affected by score.
+

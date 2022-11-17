@@ -58,9 +58,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8e5d7f42e295fa17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Atlas Search Fundamentals.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -115,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -135,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Mongod.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Mongod.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Mongod.md"
+                "file": "PSTT/Atlas Search Fundamentals.md"
               }
             }
           },
@@ -209,11 +222,11 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "d86948caad31fe43",
+  "active": "8e5d7f42e295fa17",
   "lastOpenFiles": [
+    "PSTT/Mongod.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Mongod.md",
     "2022-11-15.md",
     "PSTT/Sharding.md",
     "PSTT/Operational Skills.md",

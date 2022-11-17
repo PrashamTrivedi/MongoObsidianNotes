@@ -118,4 +118,20 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 
 ## Performance and Sizing.
 
+- Architecture of Mongod and `mongot`
+
 ![[mongot(aka Atlas Search).drawio.svg]]
+
+- Indexing of Lucene doesn't work same as Mongod Indexes.
+	- Indexing is done asynchronous
+	- In Write heavy load, indexing can fall behind a lot
+	- Lucene index will always be available even when reindexing is done.
+- Tips
+	- Using `$match` and `$sort` with `$search` will not be as performant.
+		- We can use `filter` and `near` with additional `boost` operator can be same as `$match` and `$sort`
+	- Avoid using dynamic mapping in large document.
+	- In sharding `$search` will always be [[Sharding#Scatter Gather|scatter gather]]
+	- In-memory sort will use a lot of ram, thus reducing lucene index speed
+
+## Reading Explain for search
+

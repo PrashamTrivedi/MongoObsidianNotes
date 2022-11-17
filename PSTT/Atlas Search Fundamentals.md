@@ -115,3 +115,7 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
   ...
 }
 ```
+
+## Performance and Sizing.
+
+- ![[PSTT/Untitled Diagram.svg]]

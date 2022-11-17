@@ -71,8 +71,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f488dd18fd8089a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Drawings/Drawings.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -120,6 +134,16 @@
             "id": "7fe311206a9dbc59",
             "type": "leaf",
             "state": {
+              "type": "diagram-edit",
+              "state": {
+                "file": "Untitled Diagram 1.svg"
+              }
+            }
+          },
+          {
+            "id": "3d6822bad13ceb0c",
+            "type": "leaf",
+            "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
@@ -127,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -221,17 +245,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "795b40e5ec8590ca",
+  "active": "8e5d7f42e295fa17",
   "lastOpenFiles": [
-    "PSTT/Production Ready Development.md",
+    "PSTT/Untitled Diagram.svg",
     "PSTT/Atlas Search Fundamentals.md",
+    "Drawings/Drawings.md",
+    "Untitled Diagram.svg",
+    "Untitled Diagram 1.svg",
+    "PSTT/Production Ready Development.md",
     "PSTT/Mongod.md",
     "PSTT/Design Skills and Advanced Features.md",
     "2022-11-15.md",
-    "PSTT/Sharding.md",
-    "PSTT/Operational Skills.md",
-    "PSTT/Replication.md",
-    "PSTT/Intro to Mongodb.md",
-    "PSTT/Diagnostic And Debugging.md"
+    "PSTT/Sharding.md"
   ]
 }

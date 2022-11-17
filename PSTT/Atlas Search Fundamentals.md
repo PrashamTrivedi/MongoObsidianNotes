@@ -51,3 +51,8 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 - `should`: N terms have to match, N defaults to 0, if something matches the score increases.
 - `filter`: Same as must but not affected by score.
 
+
+## Autocompletes
+
+- [Autocomplete Docs](https://www.mongodb.com/docs/atlas/atlas-search/autocomplete/) 
+- 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Production Ready Development.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -72,8 +72,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -222,17 +221,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8e5d7f42e295fa17",
+  "active": "795b40e5ec8590ca",
   "lastOpenFiles": [
-    "PSTT/Mongod.md",
     "PSTT/Production Ready Development.md",
+    "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Mongod.md",
     "PSTT/Design Skills and Advanced Features.md",
     "2022-11-15.md",
     "PSTT/Sharding.md",
     "PSTT/Operational Skills.md",
     "PSTT/Replication.md",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Internals.md"
+    "PSTT/Diagnostic And Debugging.md"
   ]
 }

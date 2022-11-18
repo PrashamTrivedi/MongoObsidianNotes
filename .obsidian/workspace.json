@@ -98,7 +98,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "Untitled Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "Untitled Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md"
+                "file": "Untitled Diagram 1.svg"
               }
             }
           },
@@ -192,10 +192,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "795b40e5ec8590ca",
+  "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
-    "PSTT/Optimizing Storage.md",
     "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Optimizing Storage.md",
     "Drawings/mongot(aka Atlas Search).svg",
     "PSTT/Design Skills and Advanced Features.md",
     "Drawings/mongot(aka Atlas Search).drawio.svg",

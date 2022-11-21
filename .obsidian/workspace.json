@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Mongod.md",
+                "file": "PSTT/Production Ready Development.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ftdc",
+                "query": "2*",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +98,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Production Ready Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Production Ready Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "PSTT/Production Ready Development.md"
               }
             }
           },
@@ -186,23 +186,24 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "7fe311206a9dbc59",
+  "active": "795b40e5ec8590ca",
   "lastOpenFiles": [
+    "PSTT/Operational Skills.md",
+    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Mongod.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Optimizing Storage.md",
     "PSTT/Diagnostic And Debugging.md",
-    "Untitled Diagram 1.svg",
     "PSTT/Atlas Search Fundamentals.md",
     "Drawings/mongot(aka Atlas Search).svg",
-    "PSTT/Design Skills and Advanced Features.md",
     "Drawings/mongot(aka Atlas Search).drawio.svg",
-    "Drawings/Drawings.md",
-    "PSTT/Untitled Diagram.svg"
+    "Drawings/Drawings.md"
   ]
 }

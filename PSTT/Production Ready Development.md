@@ -117,7 +117,7 @@ To read more. I have added [[Sharding]] notes from M103
 - Shards will split instantaneously in newly added shards if shard keys are planned correctly.
 	- e.g. If shard key is timestamp, and on of our chunks define min timestamp is week from now, any data which contains this future timestamp will be written in new shard.
 	- Old shards will be effectively only do updates and deletion from that point forward
-- With managed sharding we can split 2,3,4,5 or 7 shards on the fly.
+- With [[#### Managed Sharding|managed sharding]] we can split 2,3,4,5 or 7 shards on the fly.
 
 ### Pros and Cons
 

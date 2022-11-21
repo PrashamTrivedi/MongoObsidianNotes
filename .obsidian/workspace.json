@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "PSTT/Mongod.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "redac",
+                "query": "ftdc",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,15 +194,15 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
-    "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Mongod.md",
     "PSTT/Optimizing Storage.md",
+    "PSTT/Diagnostic And Debugging.md",
+    "Untitled Diagram 1.svg",
+    "PSTT/Atlas Search Fundamentals.md",
     "Drawings/mongot(aka Atlas Search).svg",
     "PSTT/Design Skills and Advanced Features.md",
     "Drawings/mongot(aka Atlas Search).drawio.svg",
     "Drawings/Drawings.md",
-    "PSTT/Untitled Diagram.svg",
-    "Untitled Diagram.svg",
-    "Untitled Diagram 1.svg",
-    "PSTT/Production Ready Development.md"
+    "PSTT/Untitled Diagram.svg"
   ]
 }

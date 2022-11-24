@@ -166,10 +166,8 @@ flowchart RL
 		- At that time we are running our replicaset to lates desirable state. 
 		- We are still not running to our full capacity as our old Primary is still down and not in desirable state.
 	- Upgrade old primary to desirable state, join it in replicaset, and now our rolling upgrade is finished without making entire replicaset down.
-```mermaid
-flowchart LR
-    A ~~~ B
-```
+	- In Rolling Updates there is a minimal downtime for stepDown #gotchas 
+
 - Initial Stage
 ```mermaid
 flowchart TB

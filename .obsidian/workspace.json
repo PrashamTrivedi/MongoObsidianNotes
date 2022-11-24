@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Internals.md",
+                "file": "Gobind Call Notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -112,7 +112,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Internals.md",
+                "file": "Gobind Call Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Internals.md",
+                "file": "Gobind Call Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Internals.md"
+                "file": "Gobind Call Notes.md"
               }
             }
           },
@@ -209,6 +209,7 @@
   },
   "active": "38e553d79397ed3b",
   "lastOpenFiles": [
+    "PSTT/Internals.md",
     "Gobind Call Notes.md",
     "PSTT/Intro to Mongodb.md",
     "Untitled Diagram 1.svg",
@@ -217,7 +218,6 @@
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Mongod.md",
     "PSTT/Optimizing Storage.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Atlas Search Fundamentals.md"
+    "PSTT/Diagnostic And Debugging.md"
   ]
 }

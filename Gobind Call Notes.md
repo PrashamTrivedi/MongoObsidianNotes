@@ -5,6 +5,9 @@
 - A Good CE would also share the knowledge which solves the problem.
 - Make them calm.
 - Always give options, both options should be beneficial to us.
+	- 1. Do I have a problem?
+	- 2. Where Do I have a problem?
+	- 3. How to fix it?
 - Seeing couple of matrix is never enough, telling a story using these matrix is always effective.
 >[!tip] Start with hardware, correlate with MongoDB graph
 - DISK IOPS: Rate of throughput

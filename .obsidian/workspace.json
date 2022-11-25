@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "WiredT",
+                "query": " managed sharding",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gobind Call Notes.md",
+                "file": "Untitled Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gobind Call Notes.md",
+                "file": "Untitled Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gobind Call Notes.md"
+                "file": "Untitled Diagram 1.svg"
               }
             }
           },
@@ -207,17 +207,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "38e553d79397ed3b",
+  "active": "3d6822bad13ceb0c",
   "lastOpenFiles": [
-    "PSTT/Internals.md",
     "Gobind Call Notes.md",
+    "PSTT/Production Ready Development.md",
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Internals.md",
     "PSTT/Intro to Mongodb.md",
     "Untitled Diagram 1.svg",
-    "PSTT/Production Ready Development.md",
     "PSTT/Operational Skills.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Mongod.md",
-    "PSTT/Optimizing Storage.md",
     "PSTT/Diagnostic And Debugging.md"
   ]
 }

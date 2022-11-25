@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gobind Call Notes.md",
+                "file": "PSTT/Replication.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,12 +34,12 @@
             }
           },
           {
-            "id": "f488dd18fd8089a0",
+            "id": "c55d339ffb8d3795",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Drawings/Drawings.md",
+                "file": "PSTT/Production Ready Development.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " managed sharding",
+                "query": "priority 0Nodes",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Replication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Replication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "PSTT/Replication.md"
               }
             }
           },
@@ -207,17 +207,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3d6822bad13ceb0c",
+  "active": "38e553d79397ed3b",
   "lastOpenFiles": [
-    "Gobind Call Notes.md",
     "PSTT/Production Ready Development.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/Internals.md",
-    "PSTT/Intro to Mongodb.md",
-    "Untitled Diagram 1.svg",
     "PSTT/Operational Skills.md",
+    "Drawings/Drawings.md",
+    "PSTT/Replication.md",
+    "PSTT/Internals.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Mongod.md",
-    "PSTT/Diagnostic And Debugging.md"
+    "PSTT/Optimizing Storage.md",
+    "Untitled Diagram 1.svg",
+    "Gobind Call Notes.md",
+    "PSTT/Intro to Mongodb.md"
   ]
 }

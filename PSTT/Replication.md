@@ -81,7 +81,7 @@ Among secondary node, there can be `arbiter` node, which can't hold any data, ca
   - `priority`: A number that indicates the relative eligibility of a member to become a priority. (Default 1, 0 if arbiter).
     - Can be set 0-1000 for not arbiter, 0 or 1 for arbiters.
     - Change in priority is topology change, thus forcing elections.
-    - Priority must be 0 when node is hidden, because hidden node can not become priority. ^priority0N
+    - Priority must be 0 when node is hidden, because hidden node can not become priority. 
   - `secondaryDelaySecs` (Previously `slaveDelay`): Determines number of seconds this node should lag behind primary.
   - `votes`: Votes the given member can cast.
 

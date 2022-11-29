@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Production Ready Development.md",
+                "file": "Gobind Call Notes.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "IAM",
+                "query": "evictio",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Production Ready Development.md",
+                "file": "Gobind Call Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Production Ready Development.md",
+                "file": "Gobind Call Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Production Ready Development.md"
+                "file": "Gobind Call Notes.md"
               }
             }
           },
@@ -207,17 +207,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3d6822bad13ceb0c",
+  "active": "38e553d79397ed3b",
   "lastOpenFiles": [
+    "PSTT/Internals.md",
+    "PSTT/Operational Skills.md",
+    "PSTT/Production Ready Development.md",
     "PSTT/Mongod.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
     "Untitled Diagram 1.svg",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Operational Skills.md",
-    "PSTT/Production Ready Development.md",
     "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Replication.md",
-    "Drawings/Drawings.md"
+    "PSTT/Replication.md"
   ]
 }

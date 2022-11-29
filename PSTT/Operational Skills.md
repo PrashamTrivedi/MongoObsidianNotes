@@ -9,7 +9,7 @@
 - In newer versions (Probably 4.4 an above) restoring reads from oplog instead of Journal, and journaling is used for Oplog.
 
 ## DB Cache
-- WireTiger has Block cache
+- WireTiger has Block cache #defaultCacheSize
 	- Default size `Max(((AVAILABLE RAM-1GB)/2),256 MB)` ^defaultCacheSize
 	- Only change if running multiple instances on same server
 - A block in cache can handle multiple version of document if required.

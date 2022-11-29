@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Production Ready Development.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -74,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "idemp",
+                "query": "IAM",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,7 +112,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Production Ready Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Production Ready Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md"
+                "file": "PSTT/Production Ready Development.md"
               }
             }
           },
@@ -207,17 +207,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "38e553d79397ed3b",
+  "active": "3d6822bad13ceb0c",
   "lastOpenFiles": [
+    "PSTT/Mongod.md",
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Design Skills and Advanced Features.md",
     "Untitled Diagram 1.svg",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Operational Skills.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Diagnostic And Debugging.md",
     "PSTT/Replication.md",
-    "Drawings/Drawings.md",
-    "PSTT/Internals.md",
-    "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Optimizing Storage.md"
+    "Drawings/Drawings.md"
   ]
 }

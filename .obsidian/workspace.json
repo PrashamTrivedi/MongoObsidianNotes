@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Intro to Mongodb.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -59,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -87,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "page",
+                "query": "CPU",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -220,8 +219,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2fcbde6b45e79ba0",
+  "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Optimizing Storage.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Operational Skills.md",
     "PSTT/Internals.md",
@@ -229,8 +230,6 @@
     "PSTT/Atlas Search Fundamentals.md",
     "Gobind Call Notes.md",
     "Untitled Diagram.svg",
-    "Untitled Diagram 1.svg",
-    "Slow Query.md",
-    "ScreenshotNewVault.png"
+    "Slow Query.md"
   ]
 }

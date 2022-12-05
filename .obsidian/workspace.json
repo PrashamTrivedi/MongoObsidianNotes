@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Sharding.md",
+                "file": "PSTT/Intro to Mongodb.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -26,40 +26,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c55d339ffb8d3795",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Internals.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d1bab3bc3257644",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Internals.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CPU",
+                "query": "shard",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -124,7 +99,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -219,17 +194,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "3d6822bad13ceb0c",
+  "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Internals.md",
+    "PSTT/Intro to Mongodb.md",
+    "Gobind Call Notes.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Sharding.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/Operational Skills.md",
-    "Untitled Diagram 1.svg",
-    "PSTT/Intro to Mongodb.md",
-    "PSTT/Internals.md",
-    "PSTT/Atlas Search Fundamentals.md",
-    "Gobind Call Notes.md"
+    "PSTT/Optimizing Storage.md"
   ]
 }

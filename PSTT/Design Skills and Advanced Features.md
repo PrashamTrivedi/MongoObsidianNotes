@@ -49,6 +49,9 @@
 - Notification is only sent when changes are written to majority of nodes.
 
 - Works on [[Production Ready Development#Oplog|Oplogs]]
+	- Change Streams are always scans entire `oplog.rs` collection. 
+	- Scanning this never involves indexes so change streams are always `COLSCAN` on `oplog.rs` #gotchas 
+
 
 - Drivers handle this differently
 	- Block until an events is received or timed out

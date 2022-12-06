@@ -141,6 +141,16 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 	- For string data types in dynamically or statically mapped keys, `store:true` is default
 		- Consider making it not stored unless [[#Highlight]]s are used.
 	- For serving more than one use cases (esp When we need either Keyword or Language analyzer without switching index), we can use `multi`
+	- Facet Tips
+		- Lower cardinality fields make better facets than higher cardinality fields. 
+			- For example, name does not make a good facet because it cannot easily be grouped with other similar data; age does make a good facet because it falls into common ranges.
+		- Use cases that require facets without searching can use the stringFacet, dateFacet, and numberFacet data types alone, resulting in a smaller index. 
+			- However, limiting data requires an additional data type to be defined.
+		- If a field is indexed for the purposes of faceting only and doesn't need to be factored into the relevance score, disable the field length normalization or norms setting.
+		- Faceted indexes on sharded clusters are supported in MongoDB 6.0 and newer. 
+			- There are workarounds in earlier versions for some use cases, however the majority of facet needs on a sharded cluster will require upgrading.
+	- 
+
 
 ## Reading Explain for search
 

@@ -26,7 +26,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "Gobind Call Notes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31a8e63f4195aa5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Design Skills and Advanced Features.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "76fdf32037894e79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -61,8 +87,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "explain",
-                "matchingCase": true,
+                "query": "change streams",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": true,
@@ -99,7 +125,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -119,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "PSTT/Design Skills and Advanced Features.md"
               }
             }
           },
@@ -194,17 +220,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "7fe311206a9dbc59",
+  "active": "2fcbde6b45e79ba0",
   "lastOpenFiles": [
-    "PSTT/Atlas Search Fundamentals.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "Untitled Diagram 1.svg",
-    "PSTT/Internals.md",
-    "PSTT/Intro to Mongodb.md",
     "Gobind Call Notes.md",
-    "PSTT/Sharding.md",
+    "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/PSTT.md",
+    "PSTT/Replication.md",
     "PSTT/Production Ready Development.md",
-    "PSTT/Design Skills and Advanced Features.md"
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Operational Skills.md",
+    "PSTT/Intro to Mongodb.md",
+    "PSTT/Internals.md",
+    "PSTT/Atlas Search Fundamentals.md"
   ]
 }

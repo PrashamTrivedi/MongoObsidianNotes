@@ -44,7 +44,7 @@
 	- Can filter what kind of notification we want to receive
 	- Can receive whole or delta
 	- Stop and resume notifications at will
-		- Server sends resume token, if client passes resume token and it isn't expire, client gets changes after resume token.
+		- Server sends resume token, if client passes resume token and it isn't expired, client gets changes after resume token.
 
 - Notification is only sent when changes are written to majority of nodes.
 

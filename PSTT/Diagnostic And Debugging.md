@@ -36,3 +36,10 @@ Used to get the diagnostic information about server.
 
 
 TODO: exists and or check with explain
+
+
+## MISC Points
+
+- For many operations in Cloud, we need our security groups/firewall to have ICMP enabled #gotchas 
+- To get PID running on given port run `fuser {port}/tcp`  or `lsof -i:{port}`
+- 

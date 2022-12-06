@@ -140,7 +140,7 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 			- This will also bypass FETCH in `mongod` where applicable
 	- For string data types in dynamically or statically mapped keys, `store:true` is default
 		- Consider making it not stored unless [[#Highlight]]s are used.
-	- 
+	- For serving more than one use cases (esp When we need either Keyword or Language analyzer without switching index), we can use `multi`
 
 ## Reading Explain for search
 

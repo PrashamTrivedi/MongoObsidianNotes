@@ -78,7 +78,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Sharding.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Sharding.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Sharding.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Sharding.md"
+                "file": "PSTT/Atlas Search Fundamentals.md"
               }
             }
           },
@@ -248,6 +248,8 @@
   },
   "active": "926bc274cdc72b13",
   "lastOpenFiles": [
+    "PSTT/Replication.md",
+    "PSTT/Sharding.md",
     "PSTT/Internals.md",
     "PSTT/Diagnostic And Debugging.md",
     "PSTT/Design Skills and Advanced Features.md",
@@ -255,8 +257,6 @@
     "PSTT/Mongod.md",
     "PSTT/Operational Skills.md",
     "Slow Query.md",
-    "Gobind Call Notes.md",
-    "PSTT/Replication.md",
-    "PSTT/Production Ready Development.md"
+    "Gobind Call Notes.md"
   ]
 }

@@ -126,12 +126,23 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 	- Indexing is done asynchronous
 	- In Write heavy load, indexing can fall behind a lot
 	- Lucene index will always be available even when reindexing is done.
-- Tips
+- Tips #gotchas 
 	- Using `$match` and `$sort` with `$search` will not be as performant.
 		- We can use `filter` and `near` with additional `boost` operator can be same as `$match` and `$sort`
 	- Avoid using dynamic mapping in large document.
 	- In sharding `$search` will always be [[Sharding#Scatter Gather|scatter gather]]
 	- In-memory sort will use a lot of ram, thus reducing lucene index speed
+	- Customer use case should always determine the search usecase.
+	- Using `store:true` will reduce the round trip from `mongot` to `mongod` 
+		- But it will increase the index size.
+		- By default `mongod` will return entire document.
+			- `returnStoredSource: true,` will return only what is stored
+			- This will also bypass FETCH in `mongod` where applicable
+	- For string data types in dynamically or statically mapped keys, `store:true` is default
+		- Consider making it not stored unless [[#Highlight]]s are used.
+	- 
 
 ## Reading Explain for search
+
+
 

@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Diagnostic And Debugging.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "shard",
+                "query": "explain",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -196,15 +196,15 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
-    "PSTT/Diagnostic And Debugging.md",
     "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Diagnostic And Debugging.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Internals.md",
     "PSTT/Intro to Mongodb.md",
     "Gobind Call Notes.md",
-    "Untitled Diagram 1.svg",
     "PSTT/Sharding.md",
     "PSTT/Production Ready Development.md",
-    "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Optimizing Storage.md"
+    "PSTT/Design Skills and Advanced Features.md"
   ]
 }

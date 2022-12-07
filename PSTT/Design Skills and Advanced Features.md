@@ -378,4 +378,5 @@
 - Allows us to archive data.
 	- If specifying date field, date should be older than specified date
 	- Index should ideally created for that field
-	- 
+	- For Custom query archiving, `$expr` expression should be used to find the documents.
+	- For 

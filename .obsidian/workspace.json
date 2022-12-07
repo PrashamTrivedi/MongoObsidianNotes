@@ -13,80 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Intro to Mongodb.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "38e553d79397ed3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gobind Call Notes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "31a8e63f4195aa5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "PSTT/Design Skills and Advanced Features.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76fdf32037894e79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e9136da708d4a74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Operational Skills.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "926bc274cdc72b13",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -151,7 +85,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -171,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "PSTT/Design Skills and Advanced Features.md"
               }
             }
           },
@@ -246,17 +180,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "7fe311206a9dbc59",
+  "active": "795b40e5ec8590ca",
   "lastOpenFiles": [
+    "PSTT/Intro to Mongodb.md",
+    "Gobind Call Notes.md",
+    "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Operational Skills.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Atlas Search Fundamentals.md",
     "PSTT/Replication.md",
     "PSTT/Sharding.md",
     "PSTT/Internals.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Untitled.md",
-    "PSTT/Mongod.md",
-    "PSTT/Operational Skills.md",
-    "Slow Query.md"
+    "PSTT/Diagnostic And Debugging.md"
   ]
 }

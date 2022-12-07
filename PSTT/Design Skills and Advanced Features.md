@@ -372,3 +372,10 @@
 - Like IMDB, movie information embeds main cast and crew, and links other cast and crew (a bigger information) in separate document.
 
 
+## Online Archives
+
+- [docs](https://www.mongodb.com/docs/atlas/online-archive/configure-online-archive/)
+- Allows us to archive data.
+	- If specifying date field, date should be older than specified date
+	- Index should ideally created for that field
+	- 

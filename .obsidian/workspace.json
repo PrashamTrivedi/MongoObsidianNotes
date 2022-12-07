@@ -151,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -171,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "Untitled Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "Untitled Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +211,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md"
+                "file": "Untitled Diagram 1.svg"
               }
             }
           },
@@ -246,8 +246,9 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "926bc274cdc72b13",
+  "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Atlas Search Fundamentals.md",
     "PSTT/Replication.md",
     "PSTT/Sharding.md",
     "PSTT/Internals.md",
@@ -256,7 +257,6 @@
     "PSTT/Untitled.md",
     "PSTT/Mongod.md",
     "PSTT/Operational Skills.md",
-    "Slow Query.md",
-    "Gobind Call Notes.md"
+    "Slow Query.md"
   ]
 }

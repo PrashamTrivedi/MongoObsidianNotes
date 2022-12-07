@@ -69,7 +69,7 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 
 - Use `highlight:{path:}` to highlight the relevant information
 - And in projection use `$meta: 'searchHighlights'` in your desired field to show highlights.
-- It shows what matched, not what was queried
+- It shows what matched, not what was queried ^showsMatchedNotQueried
 - Adds latency
 - Does not work with autocomplete index
 - By default lucene stores original data to highlight, so if highlight is not used, remove `store` option to preserve some space.
@@ -79,7 +79,7 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 
 - [Synonyms Document](https://www.mongodb.com/docs/atlas/atlas-search/synonyms/)
 - We need to have a collection defining synonyms.
-- We can't do fuzzy search with synonyms.
+- We can't do fuzzy search with synonyms. They are considered full terms
 - Two types of synonyms.
 	- `equivalent`: The terms defined in array `synonyms` are all equivalent to each other.
 		- E.g.: `["car","vehicle","automobile"]` are synonyms of each other and can be queried in place of each other.
@@ -99,6 +99,10 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 		}
 		```
 - These kind of synonyms should be separate documents in single collection.
+- Documents that are invalid or do not follow the expected format in the synonym collection will result in a failed index build.
+- Documents with extra, unexpected keys will also cause index builds to fail.
+- Highlighting works but remember
+	![[#^showsMatchedNotQueried]]
 - Once we define this collection, we should (re)define our index to include synonyms as follows
 ```json
 {
@@ -115,6 +119,9 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
   ...
 }
 ```
+
+- Atlas Search monitors the synonyms collection for changes and updates the index accordingly. Adding new synonyms or removing existing synonyms will not invalidate the index.
+
 
 ## Performance and Sizing.
 

@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Production Ready Development.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "45f93aad49e27833",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Sharding.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -47,9 +61,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#recommendation",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical"
@@ -182,15 +196,15 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Production Ready Development.md",
+    "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Intro to Mongodb.md",
     "Gobind Call Notes.md",
     "PSTT/Operational Skills.md",
-    "Untitled Diagram 1.svg",
     "PSTT/Atlas Search Fundamentals.md",
     "PSTT/Replication.md",
-    "PSTT/Sharding.md",
-    "PSTT/Internals.md",
-    "PSTT/Diagnostic And Debugging.md"
+    "PSTT/Sharding.md"
   ]
 }

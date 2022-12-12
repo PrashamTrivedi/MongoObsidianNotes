@@ -4,7 +4,7 @@
 ### Thought Process
 - A Good CE would also share the knowledge which solves the problem.
 - Make them calm.
-- Always give options, both options should be beneficial to us.
+- Always give options, all the options should be beneficial to us.
 	- 1. Do I have a problem?
 	- 2. Where Do I have a problem?
 	- 3. How to fix it?
@@ -17,3 +17,4 @@
 	- How many buckets you need to fill these water
 	- How many workers you need to achieve this output
 - Tickets available should not fluctuate...
+- 

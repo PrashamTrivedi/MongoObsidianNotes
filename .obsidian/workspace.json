@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Operational Skills.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#gotchas size",
+                "query": "multi key",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Operational Skills.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Operational Skills.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Operational Skills.md"
+                "file": "PSTT/Optimizing Storage.md"
               }
             }
           },
@@ -220,15 +220,15 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "6ddadef2d787cf9f",
+  "active": "2fcbde6b45e79ba0",
   "lastOpenFiles": [
+    "Misc Notes.md",
+    "PSTT/Operational Skills.md",
     "PSTT/Internals.md",
     "PSTT/Atlas Search Fundamentals.md",
-    "Misc Notes.md",
     "Gobind Call Notes.md",
     "Untitled Diagram 1.svg",
     "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Operational Skills.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Intro to Mongodb.md"

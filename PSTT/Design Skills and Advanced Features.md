@@ -338,6 +338,9 @@
 - Confusion over [[#Payload vs Process fields]]
 - Use either [[Optimizing Storage#Wildcard Indexes|Wildcard Index]] or Embedded document with a common name.
 	- Like attributes for E-commerce.
+- Adds more bson size.
+- E.g. In case of `{property:value}` we use `{key:property,value:value}`
+
 
 ### Bucket pattern
 - Most common design pattern
@@ -352,7 +355,7 @@
 ### Computed Pattern
 
 - Never recompute if you can pre-compute.
-- Used when computed reads are more often then computed writes.
+- Used when computed reads are more often than computed writes.
 	- E.g. Live score (Esp in slow-er sports like football) where there are limited process to write, but unlimited readers.
 - Sometimes we may require to update some additional summary records too
 
@@ -370,6 +373,7 @@
 - Like [[#Bucket pattern]], a new record if too many items
 - There is a main record and another flag to say if there is an overspill situation.
 - Like IMDB, movie information embeds main cast and crew, and links other cast and crew (a bigger information) in separate document.
+
 
 
 ## Online Archives

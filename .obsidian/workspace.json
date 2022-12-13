@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "PSTT/Intro to Mongodb.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "Untitled Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "Untitled Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Optimizing Storage.md"
+                "file": "Untitled Diagram 1.svg"
               }
             }
           },
@@ -220,8 +220,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2fcbde6b45e79ba0",
+  "active": "3d6822bad13ceb0c",
   "lastOpenFiles": [
+    "PSTT/Intro to Mongodb.md",
+    "PSTT/Optimizing Storage.md",
     "Misc Notes.md",
     "PSTT/Operational Skills.md",
     "PSTT/Internals.md",
@@ -229,8 +231,6 @@
     "Gobind Call Notes.md",
     "Untitled Diagram 1.svg",
     "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Production Ready Development.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/Intro to Mongodb.md"
+    "PSTT/Production Ready Development.md"
   ]
 }

@@ -62,4 +62,17 @@ This is un-optimal, specially when `itemCollection.count()` returns the number o
 
 ## Remove `limit` Options from `$geoNear` Queries (Priority 2)
 
-When searching `buildClosestToLocationPipeline`
+When searching `buildClosestToLocationPipeline`, `limit` is appended in `$geoNear` queries.
+
+Starting with MongoDB v 4.2, `limit` is no longer working with `$geoNear`. To mitigate it, another stage with `$limit` is used.
+
+You should remove `limit` from `$geoNear`.
+
+## Use `projection` in StoreDao (Priority 2)
+
+When Querying ZipCode or City and State, we observed that in `find` operation, whole document is queried only to fetch `lat` and `long`. 
+
+Fetching whole document will require more fields in memory and bigger object in network travel.
+
+It is advised to use Projection in StoreDao.
+

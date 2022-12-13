@@ -22,4 +22,10 @@ All the collections are sorted by `_id` by default.
 
 ## Drop `category` in Cart. (Priority 1/2)
 
-Customer is adding `category` field in cart 
+Customer is adding `category` field in cart which isn't used in anyway.
+
+## Limit number or reviews in `item` document (Priority 1)
+
+Client is directly adding reviews in item document. There is no limit on how many reviews are stored in database.
+
+This can lead to performance penalty later on. Unbinded arrays will increase document size significantly and 

@@ -8,7 +8,7 @@ Java Driver 3.5.0 supports till MongoDB version 3.4. Source: https://www.mongodb
 
 You can see changelog [here](https://github.com/mongodb/mongo-java-driver/release), which contains 
 
-## Reuse Connection and database variables. (Priority 1)
+## Reuse Connection and database variables. (Priority 2)
 
 Each operation contains this piece of code. 
 

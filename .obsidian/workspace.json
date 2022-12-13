@@ -21,32 +21,6 @@
             }
           },
           {
-            "id": "f17db89a82e45d29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Internals.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6ddadef2d787cf9f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Intro to Mongodb.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "04a719fc35f9d6b1",
             "type": "leaf",
             "state": {
@@ -58,22 +32,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "45f93aad49e27833",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Sharding.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -100,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "multi key",
+                "query": "logs",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -235,15 +196,15 @@
   },
   "active": "04a719fc35f9d6b1",
   "lastOpenFiles": [
+    "Slow Query.md",
+    "PSTT/Sharding.md",
+    "Gobind Call Notes.md",
+    "PSTT/Internals.md",
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Operational Skills.md",
+    "Evaluation.md",
     "Untitled Diagram 1.svg",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Optimizing Storage.md",
-    "Misc Notes.md",
-    "PSTT/Operational Skills.md",
-    "PSTT/Internals.md",
-    "PSTT/Atlas Search Fundamentals.md",
-    "Gobind Call Notes.md",
-    "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Production Ready Development.md"
+    "Misc Notes.md"
   ]
 }

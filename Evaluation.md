@@ -48,3 +48,6 @@ Embedding `address` will reduce latency and will return the documents faster.
 
 ## Remove Items from Invoices (Priority 2)
 
+All Invoices store `items`, which is Array of numbers, but UI only cares about number of Items, i.e. size of `items` field. 
+
+Storing an array is less optimal when you only require the number of items stored in it and not the actual content. 

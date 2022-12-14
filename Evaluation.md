@@ -82,7 +82,7 @@ It is advised to use Projection in StoreDao.
 ## Checklist
 
 ## Hardware
-- [x] NUMA
+- [ ] NUMA
 	- `sudo sysctl  vm.zone_reclaim_mode | grep -q "= 0$" || echo "Zone reclaim setting incorrect"`
 		- NUMA setup correctly
 - [ ] Swap
@@ -93,7 +93,7 @@ It is advised to use Projection in StoreDao.
 		- Disc Access Time is not disabled.
 - [ ] User Resource Limits
 	- Check in `/etc/security/limits.conf`, check for `mongod` entries in Domain
-		- No entries in Mongod.
+		- No entries of Mongod.
 - [ ] Disable Transparent Huge Pages
 	- Looks like THP are enabled
 - [ ] Set Readahead
@@ -118,3 +118,5 @@ It is advised to use Projection in StoreDao.
 - [ ] Journaling
 	- Enabled
 - [ ] Monitoring
+- [ ] Replica Set topoligy
+	- [ ] Current primary has a very high capacity others have 50%

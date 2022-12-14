@@ -76,3 +76,23 @@ Fetching whole document will require more fields in memory and bigger object in 
 
 It is advised to use Projection in StoreDao.
 
+
+# Production Note (Mongomart updated)
+
+## Checklist
+
+## Hardware
+- [ ] NUMA
+- [ ] Swap
+- [ ] Disk Access Time
+- [ ] User Resource Limits
+- [ ] Disable Transparent Huge Pages
+- [ ] Set Readahead
+- [ ] SELinux
+- [ ] FileSystem
+
+## MongoDB
+- [ ] Oplog Size
+- [ ] Wiredtiger Cache Size
+- [ ] Journaling
+- [ ] Monitoring (Is cloud manager )

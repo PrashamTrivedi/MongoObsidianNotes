@@ -107,6 +107,7 @@ It is advised to use Projection in StoreDao.
 	- Length 3.14 Hours (Must be atleast 24 hours)
 - [ ] Wiredtiger Cache Size
 	- 10GB predetermined
+	- 16GB ram
 - [ ] Journaling
 	- Enabled
 - [ ] Monitoring

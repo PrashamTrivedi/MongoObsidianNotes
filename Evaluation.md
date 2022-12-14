@@ -85,6 +85,7 @@ It is advised to use Projection in StoreDao.
 - [ ] NUMA
 	- `sudo sysctl  vm.zone_reclaim_mode | grep -q "= 0$" || echo "Zone reclaim setting incorrect"`
 		- NUMA setup correctly
+			- Not in Node 2
 - [ ] Swap
 	- `cat /proc/swaps | grep -qv Filename || echo "Swap is not configured"`
 		- SWAP is not configured

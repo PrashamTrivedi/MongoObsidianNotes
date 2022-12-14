@@ -56,7 +56,7 @@ Among secondary node, there can be `arbiter` node, which can't hold any data, ca
 - `rs.isMaster()`: Checks if current node is master or not. ^rsIsMaster
   - Gives primary node with `primary` key, current node with `me` key.
 - `db.serverStatus()['repl']`: Same as `rs.isMaster()` except it prints `rbid` value which is the number of rollbacks in current node.
-- `rs.printReplicationInfo()`: Prints data about oplog for current node.
+- `rs.printReplicationInfo()`: Prints data about oplog for current node. ^oplogSize
 - `rs.stepDown()`: Should be called from master. Steps down current node as master to force election. ^stepDown
 
 

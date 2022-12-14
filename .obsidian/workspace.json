@@ -39,15 +39,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Evaluation.md",
+                "file": "PSTT/Replication.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "62d13acba7fdbd11",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Evaluation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -74,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "oplog size",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -207,17 +222,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b63bb8b5e6127acc",
+  "active": "62d13acba7fdbd11",
   "lastOpenFiles": [
     "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Replication.md",
+    "PSTT/Operational Skills.md",
+    "PSTT/Production Ready Development.md",
+    "PSTT/Internals.md",
+    "PSTT/Design Skills and Advanced Features.md",
     "Evaluation.md",
     "PSTT/Mongod.md",
     "Untitled Diagram 1.svg",
-    "PSTT/Optimizing Storage.md",
-    "Slow Query.md",
-    "PSTT/Sharding.md",
-    "Gobind Call Notes.md",
-    "PSTT/Internals.md",
-    "PSTT/Operational Skills.md"
+    "PSTT/Optimizing Storage.md"
   ]
 }

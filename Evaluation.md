@@ -103,6 +103,8 @@ It is advised to use Projection in StoreDao.
 
 ## MongoDB
 - [ ] Oplog Size
+	- 900MB
+	- Length 3.14 Hours (Must be atleast 24 hours)
 - [ ] Wiredtiger Cache Size
 	- 10GB predetermined
 - [ ] Journaling

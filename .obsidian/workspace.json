@@ -224,9 +224,9 @@
   },
   "active": "62d13acba7fdbd11",
   "lastOpenFiles": [
-    "PSTT/Replication.md",
-    "Evaluation.md",
     "PSTT/Diagnostic And Debugging.md",
+    "Evaluation.md",
+    "PSTT/Replication.md",
     "PSTT/Operational Skills.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Internals.md",

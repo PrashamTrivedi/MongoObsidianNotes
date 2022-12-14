@@ -97,14 +97,16 @@ It is advised to use Projection in StoreDao.
 - [ ] Disable Transparent Huge Pages
 	- Looks like THP are enabled
 - [ ] Set Readahead
-	- `sudo blockdev --getra /dev/xvdb | grep -q '^8|32$' || echo "Readahead on data disk is wrong" `
+	- `sudo blockdev --getra /dev/nvme1n1 | grep -q '^8|32$' || echo "Readahead on data disk is wrong" `
 		- Readahead on data disk is wrong
+		- Current output of `sudo blockdev --getra /dev/nvme1n1` is 256
 - [x] SELinux
 	- `grep 'SELINUX=' /etc/selinux/config`
 		- SELinux is disabled
 - [ ] FileSystem
-	- `mount | grep /dev/xvdb | grep -q xfs && echo "Disk OK" || echo "Disk not mounted with xfs"`
+	- `mount | grep /dev/nvme1n1 | grep -q xfs && echo "Disk OK" || echo "Disk not mounted with xfs"`
 		- Disk not mounted with XFS
+		- Disk is mounted with ext3
 
 ## MongoDB
 - [ ] Oplog Size

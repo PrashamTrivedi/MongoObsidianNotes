@@ -100,6 +100,8 @@ It is advised to use Projection in StoreDao.
 	- `grep 'SELINUX=' /etc/selinux/config`
 		- SELinux is disabled
 - [ ] FileSystem
+	- `mount | grep /dev/xvdb | grep -q xfs && echo "Disk OK" || echo "Disk not mounted with xfs"`
+		- Disk not mounted with XFS
 
 ## MongoDB
 - [ ] Oplog Size

@@ -101,7 +101,7 @@ It is advised to use Projection in StoreDao.
 	- `sudo blockdev --getra /dev/nvme1n1 | grep -q '^8|32$' || echo "Readahead on data disk is wrong" `
 		- Readahead on data disk is wrong
 		- Current output of `sudo blockdev --getra /dev/nvme1n1` is 256
-- [x] SELinux
+- [ ] SELinux
 	- `grep 'SELINUX=' /etc/selinux/config`
 		- SELinux is disabled
 - [ ] FileSystem
@@ -119,5 +119,5 @@ It is advised to use Projection in StoreDao.
 - [ ] Journaling
 	- Enabled
 - [ ] Monitoring
-- [ ] Replica Set topoligy
-	- [ ] Current primary has a very high capacity others have 50%
+- [x] Replica Set topoligy
+	- [x] Current primary has a very high capacity others have 50%

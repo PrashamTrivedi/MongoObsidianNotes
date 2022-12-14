@@ -224,13 +224,13 @@
   },
   "active": "62d13acba7fdbd11",
   "lastOpenFiles": [
-    "PSTT/Diagnostic And Debugging.md",
     "PSTT/Replication.md",
+    "Evaluation.md",
+    "PSTT/Diagnostic And Debugging.md",
     "PSTT/Operational Skills.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Internals.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "Evaluation.md",
     "PSTT/Mongod.md",
     "Untitled Diagram 1.svg",
     "PSTT/Optimizing Storage.md"

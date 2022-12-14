@@ -92,7 +92,10 @@ It is advised to use Projection in StoreDao.
 	- `grep /data /etc/fstab | grep -q noatime || echo "Access time on data drive not disabled"`
 		- Disc Access Time is not disabled.
 - [ ] User Resource Limits
+	- Check in `/etc/security/limits.conf`, check for `mongod` entries in Domain
+		- No entries in Mongod.
 - [ ] Disable Transparent Huge Pages
+	- Looks like THP are enabled
 - [ ] Set Readahead
 	- `sudo blockdev --getra /dev/xvdb | grep -q '^8|32$' || echo "Readahead on data disk is wrong" `
 		- Readahead on data disk is wrong

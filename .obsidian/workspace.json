@@ -26,6 +26,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "PSTT/Diagnostic And Debugging.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b63bb8b5e6127acc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Evaluation.md",
                 "mode": "source",
                 "backlinks": true,
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "covered",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -194,17 +207,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "04a719fc35f9d6b1",
+  "active": "b63bb8b5e6127acc",
   "lastOpenFiles": [
+    "PSTT/Diagnostic And Debugging.md",
+    "Evaluation.md",
+    "PSTT/Mongod.md",
     "Untitled Diagram 1.svg",
     "PSTT/Optimizing Storage.md",
-    "Evaluation.md",
     "Slow Query.md",
     "PSTT/Sharding.md",
     "Gobind Call Notes.md",
     "PSTT/Internals.md",
-    "PSTT/Operational Skills.md",
-    "PSTT/Intro to Mongodb.md",
-    "Misc Notes.md"
+    "PSTT/Operational Skills.md"
   ]
 }

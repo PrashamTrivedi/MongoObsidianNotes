@@ -82,17 +82,29 @@ It is advised to use Projection in StoreDao.
 ## Checklist
 
 ## Hardware
-- [ ] NUMA
+- [x] NUMA
+	- `sudo sysctl  vm.zone_reclaim_mode | grep -q "= 0$" || echo "Zone reclaim setting incorrect"`
+		- NUMA setup correctly
 - [ ] Swap
+	- `cat /proc/swaps | grep -qv Filename || echo "Swap is not configured"`
+		- SWAP is not configured
 - [ ] Disk Access Time
+	- `grep /data /etc/fstab | grep -q noatime || echo "Access time on data drive not disabled"`
+		- Disc Access Time is not disabled.
 - [ ] User Resource Limits
 - [ ] Disable Transparent Huge Pages
 - [ ] Set Readahead
-- [ ] SELinux
+	- `sudo blockdev --getra /dev/xvdb | grep -q '^8|32$' || echo "Readahead on data disk is wrong" `
+		- Readahead on data disk is wrong
+- [x] SELinux
+	- `grep 'SELINUX=' /etc/selinux/config`
+		- SELinux is disabled
 - [ ] FileSystem
 
 ## MongoDB
 - [ ] Oplog Size
 - [ ] Wiredtiger Cache Size
+	- 10GB predetermined
 - [ ] Journaling
-- [ ] Monitoring (Is cloud manager )
+	- Enabled
+- [ ] Monitoring

@@ -26,8 +26,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Diagnostic And Debugging.md",
-                "mode": "source",
+                "file": "PSTT/Internals.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -49,7 +49,6 @@
           {
             "id": "62d13acba7fdbd11",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -57,12 +56,11 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
+              }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "oplog size",
+                "query": "rs.conf",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -127,11 +125,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "55ffd3be1c1aaa75",
@@ -147,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Replication.md",
+                "file": "PSTT/Internals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Replication.md",
+                "file": "PSTT/Internals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Replication.md"
+                "file": "PSTT/Internals.md"
               }
             }
           },
@@ -220,15 +218,16 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "b63bb8b5e6127acc",
+  "active": "04a719fc35f9d6b1",
   "lastOpenFiles": [
+    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Replication.md",
     "Untitled Diagram 1.svg",
     "Evaluation.md",
-    "PSTT/Diagnostic And Debugging.md",
     "Untitled.md",
-    "PSTT/Replication.md",
     "PSTT/Operational Skills.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Internals.md",

@@ -73,7 +73,7 @@
 
 ### Retryable reads:
 - Automatically retry reads.
-- Does not apply on [[Intro to Mongodb#^cursurCacheGetMore|`getMore`]] operations 
+- Does not apply on [[Intro to Mongodb#^cursorCacheGetMore|`getMore`]] operations 
 	- Because if server gets down, the cursor and it's initial batch doesn't exist.
 
 ## Multi Document Transactions

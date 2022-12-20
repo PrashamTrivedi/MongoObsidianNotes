@@ -4,63 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "020af057ded1a9da",
+        "id": "25cdbf0b5edd96ff",
         "type": "tabs",
         "children": [
           {
-            "id": "795b40e5ec8590ca",
+            "id": "95a47abcdbb6ae3f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gobind Call Notes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "04a719fc35f9d6b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b63bb8b5e6127acc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Replication.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "62d13acba7fdbd11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Evaluation.md",
+                "file": "PSTT/Internals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -87,7 +47,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GridFS",
+                "query": "yield",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -129,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 348.5
   },
   "right": {
     "id": "55ffd3be1c1aaa75",
@@ -222,15 +182,15 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Internals.md",
+    "PSTT/Replication.md",
+    "Untitled Diagram 1.svg",
     "Gobind Call Notes.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Operational Skills.md",
     "PSTT/Mongod.md",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Internals.md",
-    "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Replication.md"
+    "PSTT/Design Skills and Advanced Features.md"
   ]
 }

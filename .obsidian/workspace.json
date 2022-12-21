@@ -34,6 +34,22 @@
             }
           },
           {
+            "id": "b08b436b62e1c141",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0,
+                  "snapToGrid": false
+                }
+              }
+            }
+          },
+          {
             "id": "62ca3993cdf49003",
             "type": "leaf",
             "state": {
@@ -47,7 +63,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,16 +108,6 @@
             }
           },
           {
-            "id": "7fe311206a9dbc59",
-            "type": "leaf",
-            "state": {
-              "type": "diagram-edit",
-              "state": {
-                "file": "Untitled Diagram 1.svg"
-              }
-            }
-          },
-          {
             "id": "3d6822bad13ceb0c",
             "type": "leaf",
             "state": {
@@ -132,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "Untitled.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "Untitled.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "Untitled.canvas"
               }
             }
           },
@@ -199,13 +205,24 @@
               "type": "BC-tree",
               "state": {}
             }
+          },
+          {
+            "id": "7fe311206a9dbc59",
+            "type": "leaf",
+            "state": {
+              "type": "diagram-edit",
+              "state": {
+                "file": "Untitled Diagram 1.svg"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,10 +236,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7fe311206a9dbc59",
+  "active": "b08b436b62e1c141",
   "lastOpenFiles": [
-    "PSTT/Optimizing Storage.md",
     "Untitled Diagram 1.svg",
+    "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Atlas Search Fundamentals.md",
     "PSTT/Diagnostic And Debugging.md",

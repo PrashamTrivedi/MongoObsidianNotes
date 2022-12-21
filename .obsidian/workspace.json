@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Intro to Mongodb.md",
+                "file": "PSTT/Design Skills and Advanced Features.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c67ae09e4a87389a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Optimizing Storage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -33,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cursor",
+                "query": "index ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -98,7 +112,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -118,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Intro to Mongodb.md",
+                "file": "Untitled Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Intro to Mongodb.md",
+                "file": "Untitled Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Intro to Mongodb.md"
+                "file": "Untitled Diagram 1.svg"
               }
             }
           },
@@ -193,17 +207,29 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "95a47abcdbb6ae3f",
+  "left-ribbon": {
+    "hiddenItems": {
+      "breadcrumbs:Breadcrumbs Visualisation": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Mongod.md",
+    "PSTT/Operational Skills.md",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Internals.md",
     "Untitled Diagram 1.svg",
-    "PSTT/Replication.md",
-    "Gobind Call Notes.md",
-    "PSTT/Production Ready Development.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/Operational Skills.md",
-    "PSTT/Mongod.md"
+    "PSTT/Replication.md"
   ]
 }

@@ -47,7 +47,7 @@
             }
           },
           {
-            "id": "b08b436b62e1c141",
+            "id": "62ca3993cdf49003",
             "type": "leaf",
             "state": {
               "type": "canvas",
@@ -61,22 +61,9 @@
                 }
               }
             }
-          },
-          {
-            "id": "62ca3993cdf49003",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Intro to Mongodb.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -151,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gobind Call Notes.md",
+                "file": "Untitled.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gobind Call Notes.md",
+                "file": "Untitled.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Gobind Call Notes.md"
+                "file": "Untitled.canvas"
               }
             }
           },
@@ -230,7 +217,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -248,17 +235,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "e4ed1c4e066c6daf",
+  "active": "62ca3993cdf49003",
   "lastOpenFiles": [
+    "PSTT/Mongod.md",
+    "PSTT/Intro to Mongodb.md",
+    "Gobind Call Notes.md",
     "Misc Notes.md",
     "Untitled.md",
     "Untitled.canvas",
     "Untitled Diagram 1.svg",
-    "PSTT/Mongod.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Atlas Search Fundamentals.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Operational Skills.md"
+    "PSTT/Atlas Search Fundamentals.md"
   ]
 }

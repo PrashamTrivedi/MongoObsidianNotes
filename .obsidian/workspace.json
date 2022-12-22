@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Mongod.md",
+                "file": "Misc Notes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4ed1c4e066c6daf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gobind Call Notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,7 +75,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -137,7 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "Gobind Call Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "Gobind Call Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "Gobind Call Notes.md"
               }
             }
           },
@@ -234,17 +248,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7fe311206a9dbc59",
+  "active": "e4ed1c4e066c6daf",
   "lastOpenFiles": [
-    "PSTT/Mongod.md",
-    "Untitled Diagram 1.svg",
+    "Misc Notes.md",
+    "Untitled.md",
     "Untitled.canvas",
+    "Untitled Diagram 1.svg",
+    "PSTT/Mongod.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Atlas Search Fundamentals.md",
     "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Operational Skills.md",
-    "PSTT/Intro to Mongodb.md",
-    "PSTT/Internals.md"
+    "PSTT/Operational Skills.md"
   ]
 }

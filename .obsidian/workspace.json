@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Mongod.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,8 +62,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Untitled Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Untitled Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.canvas"
+                "file": "Untitled Diagram 1.svg"
               }
             }
           },
@@ -217,12 +216,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,17 +234,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "b08b436b62e1c141",
+  "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Mongod.md",
     "Untitled Diagram 1.svg",
+    "Untitled.canvas",
     "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Atlas Search Fundamentals.md",
     "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Mongod.md",
     "PSTT/Operational Skills.md",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Internals.md",
-    "PSTT/Replication.md"
+    "PSTT/Internals.md"
   ]
 }

@@ -50,15 +50,12 @@
             "id": "62ca3993cdf49003",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0,
-                  "snapToGrid": false
-                }
+                "file": "Misc Notes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -237,13 +234,13 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "Misc Notes.md",
+    "Untitled Diagram 1.svg",
     "Untitled.canvas",
     "PSTT/Mongod.md",
     "PSTT/Intro to Mongodb.md",
     "Gobind Call Notes.md",
-    "Misc Notes.md",
     "Untitled.md",
-    "Untitled Diagram 1.svg",
     "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Atlas Search Fundamentals.md"

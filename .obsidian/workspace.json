@@ -52,15 +52,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc Notes.md",
+                "file": "PSTT/Mongod.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "0b17cce8f0f8ca55",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.1.9"
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -87,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "index ",
+                "query": "mongodump",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -115,7 +125,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -218,7 +228,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,8 +245,8 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
-    "Misc Notes.md",
     "Untitled Diagram 1.svg",
+    "Misc Notes.md",
     "Untitled.canvas",
     "PSTT/Mongod.md",
     "PSTT/Intro to Mongodb.md",

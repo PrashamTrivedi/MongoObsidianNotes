@@ -63,9 +63,12 @@
             "id": "0b17cce8f0f8ca55",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.1.9"
+                "file": "PSTT/Optimizing Storage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -97,7 +100,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mongodump",
+                "query": "createI",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -228,8 +231,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,15 +247,15 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Mongod.md",
+    "PSTT/Operational Skills.md",
     "Untitled Diagram 1.svg",
     "Misc Notes.md",
     "Untitled.canvas",
-    "PSTT/Mongod.md",
     "PSTT/Intro to Mongodb.md",
     "Gobind Call Notes.md",
     "Untitled.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Atlas Search Fundamentals.md"
+    "PSTT/Design Skills and Advanced Features.md"
   ]
 }

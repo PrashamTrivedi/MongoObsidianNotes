@@ -8,6 +8,10 @@
 # Cloud Provider instance size Options.
 
 - [Internal Doc](https://wiki.corp.mongodb.com/display/cs/Cloud+Provider+Instance+Size+Specifications)
+- Some Observations
+	- M90 is only available on Azure
+	- GCP Doesn't have NVMe option
+	- 
 
 # Data Transfer Costs
 

@@ -34,6 +34,19 @@
             }
           },
           {
+            "id": "06b33f7facfab12f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Optimizing Storage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e4ed1c4e066c6daf",
             "type": "leaf",
             "state": {
@@ -260,9 +273,9 @@
   },
   "active": "a723fb48371ab925",
   "lastOpenFiles": [
-    "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Atlas Notes.md",
     "PSTT/Optimizing Storage.md",
+    "PSTT/Atlas Notes.md",
+    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/PSTT.md",
     "Untitled Diagram 1.svg",
     "Misc Notes.md",

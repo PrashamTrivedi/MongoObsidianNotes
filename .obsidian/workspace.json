@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc Notes.md",
+                "file": "PSTT/PSTT.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a723fb48371ab925",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Atlas Notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -73,7 +86,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -128,7 +141,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -148,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Atlas Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Atlas Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +201,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "PSTT/Atlas Notes.md"
               }
             }
           },
@@ -245,17 +258,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7fe311206a9dbc59",
+  "active": "a723fb48371ab925",
   "lastOpenFiles": [
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Atlas Notes.md",
+    "PSTT/PSTT.md",
+    "Untitled Diagram 1.svg",
     "Misc Notes.md",
     "Gobind Call Notes.md",
     "PSTT/Mongod.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "Untitled Diagram 1.svg",
-    "PSTT/Optimizing Storage.md",
     "PSTT/Operational Skills.md",
-    "Untitled.canvas",
-    "PSTT/Intro to Mongodb.md",
-    "Untitled.md"
+    "Untitled.canvas"
   ]
 }

@@ -27,9 +27,11 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 - Ideal for debugging the question why certain index or plan is not executed.
 - Returns [QueryPlanner](https://www.mongodb.com/docs/v6.0/reference/explain-results/#queryplanner) and [ExecutionStats](https://www.mongodb.com/docs/v6.0/reference/explain-results/#executionstats) objects
 
->[!warning] Explain modes in Online Archive
+>[!warning] Explain modes in Online Archive 
 >None of the above explain modes work in Online Archive. Explain modes available in Online Archive are `queryPlanner`, and `queryPlannerExtended`.
 >
+
+^onlineArchiveExplain
 
 # Index
 

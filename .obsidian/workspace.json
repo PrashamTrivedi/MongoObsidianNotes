@@ -113,7 +113,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "change strea",
+                "query": "change stre",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -141,7 +141,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -260,14 +260,14 @@
   },
   "active": "a723fb48371ab925",
   "lastOpenFiles": [
-    "PSTT/Optimizing Storage.md",
+    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Atlas Notes.md",
+    "PSTT/Optimizing Storage.md",
     "PSTT/PSTT.md",
     "Untitled Diagram 1.svg",
     "Misc Notes.md",
     "Gobind Call Notes.md",
     "PSTT/Mongod.md",
-    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Operational Skills.md",
     "Untitled.canvas"
   ]

@@ -54,7 +54,10 @@
 - If not it expands the job interval by 10 mints. (Next job will run after 15 mins, 25 mins, 35 mins, 45 etc...upto 12 hours AKA 720 mins)
 - If the job interval reaches to maximum, or size or document numbers reaches threshold, above limit is reset to 5 minutes.
 - Index Is needed unless the QTR is < 10.
-- 
+
+# Security
+- Atlas deploys clusters in a VPC (AWS/GCP) or VNet (Azure)
+	- This isolates the customer data and configured to prevent inbound access 
 
 # Private Endpoints
 

@@ -1,4 +1,4 @@
-n## Search Index Parameters
+## Search Index Parameters
 
 - Index Analyser
 - Search Analyser

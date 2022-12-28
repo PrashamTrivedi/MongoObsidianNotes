@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "PSTT/Replication.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -58,9 +58,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d87c10ffad649650",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Atlas Search Fundamentals.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -115,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -135,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Atlas Notes.md"
+                "file": "PSTT/Atlas Search Fundamentals.md"
               }
             }
           },
@@ -232,17 +245,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "06b33f7facfab12f",
+  "active": "d87c10ffad649650",
   "lastOpenFiles": [
-    "Untitled Diagram 1.svg",
+    "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Replication.md",
+    "PSTT/PSTT.md",
     "PSTT/Atlas Notes.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Production Ready Development.md",
     "PSTT/Optimizing Storage.md",
-    "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/PSTT.md",
     "Misc Notes.md",
     "Gobind Call Notes.md",
-    "PSTT/Mongod.md",
-    "PSTT/Operational Skills.md"
+    "PSTT/Mongod.md"
   ]
 }

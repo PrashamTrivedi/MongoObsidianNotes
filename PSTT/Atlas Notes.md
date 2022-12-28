@@ -58,6 +58,9 @@
 # Security
 - Atlas deploys clusters in a VPC (AWS/GCP) or VNet (Azure)
 	- This isolates the customer data and configured to prevent inbound access 
+- [Client Side Field Level Encryption (CSFLE)](https://www.mongodb.com/docs/manual/core/csfle/)
+- [How to define Encrypted Schema](https://www.mongodb.com/docs/manual/core/csfle/quick-start/#create-an-encryption-schema-for-your-collection)
+- ![[Production Ready Development#Encryption in use]]
 
 # Private Endpoints
 

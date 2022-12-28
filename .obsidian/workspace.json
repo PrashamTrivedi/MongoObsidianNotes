@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "PSTT/Production Ready Development.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -39,46 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4ed1c4e066c6daf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gobind Call Notes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c67ae09e4a87389a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Optimizing Storage.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "62ca3993cdf49003",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Mongod.md",
+                "file": "PSTT/Atlas Notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "change stre",
+                "query": "encryption",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -174,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "Untitled Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "Untitled Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -214,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Atlas Notes.md"
+                "file": "Untitled Diagram 1.svg"
               }
             }
           },
@@ -271,17 +232,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a723fb48371ab925",
+  "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
-    "PSTT/Optimizing Storage.md",
     "PSTT/Atlas Notes.md",
+    "PSTT/Production Ready Development.md",
+    "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/PSTT.md",
     "Untitled Diagram 1.svg",
     "Misc Notes.md",
     "Gobind Call Notes.md",
     "PSTT/Mongod.md",
-    "PSTT/Operational Skills.md",
-    "Untitled.canvas"
+    "PSTT/Operational Skills.md"
   ]
 }

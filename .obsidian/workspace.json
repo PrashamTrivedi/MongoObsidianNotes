@@ -65,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hide",
+                "query": "$or",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -128,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md"
+                "file": "PSTT/Diagnostic And Debugging.md"
               }
             }
           },
@@ -227,7 +227,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -247,15 +247,15 @@
   },
   "active": "d87c10ffad649650",
   "lastOpenFiles": [
+    "PSTT/Atlas Search Fundamentals.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Optimizing Storage.md",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Diagnostic And Debugging.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Atlas Search Fundamentals.md",
     "PSTT/Replication.md",
     "PSTT/PSTT.md",
     "PSTT/Atlas Notes.md",
-    "Untitled Diagram 1.svg",
     "PSTT/Production Ready Development.md"
   ]
 }

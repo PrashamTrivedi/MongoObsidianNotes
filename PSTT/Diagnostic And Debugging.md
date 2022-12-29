@@ -29,7 +29,7 @@ Used to get the diagnostic information about server.
 	- Regex Operator
 		- ![[Optimizing Storage#^regexIndex]]
 - If your keyExamined number is greater, this is effectively a `COLLSCAN` in memory or unchecked range.
-- `$or` should use explicit query for every sub-clause.
+- `$or` should use explicit index for every sub-clause. #gotchas 
 - `$elemMatch` bug: It will only pick index for first attributes.
 - `$in` is equality if array size <=200, otherwise it's taken as range. #documentTodo 
 - Workload isolation: Isolate other heavy queries to isolate to secondaries so primary won't be contended.

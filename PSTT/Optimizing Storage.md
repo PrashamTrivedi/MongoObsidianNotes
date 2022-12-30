@@ -215,6 +215,7 @@ In all modes MongoDB runs [Query Optimizer](https://www.mongodb.com/docs/v6.0/co
 - Since 4.2 these values are ignored and indexes are being built hybrid, thus having best of foreground and background builds.
 
 ## Hidden Indexes
+- [Document](https://www.mongodb.com/docs/manual/core/index-hidden)
 - Prevent database to include the given index in plan.
 - No longer used in `find` or `update`
 - Still updated and can be re-enabled.

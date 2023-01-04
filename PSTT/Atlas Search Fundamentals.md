@@ -156,7 +156,9 @@ Below operators must be included in [`compound`](https://www.mongodb.com/docs/at
 		- If a field is indexed for the purposes of faceting only and doesn't need to be factored into the relevance score, disable the field length normalization or norms setting.
 		- Faceted indexes on sharded clusters are supported in MongoDB 6.0 and newer. 
 			- There are workarounds in earlier versions for some use cases, however the majority of facet needs on a sharded cluster will require upgrading.
-	- 
+	- Atlas Search is another consumer of [[Design Skills and Advanced Features#Change Streams|Change Streams]] in Java. `mongot` listens to the change streams and updates the lucene index.
+		- Source: [https://wiki.corp.mongodb.com/pages/viewpage.action?pageId=97458119](https://wiki.corp.mongodb.com/pages/viewpage.action?pageId=97458119)
+	- [Manipulating Atlas Search]([https://www.mongodb.com/docs/atlas/atlas-search/scoring](https://www.mongodb.com/docs/atlas/atlas-search/scoring))
 
 
 ## Reading Explain for search

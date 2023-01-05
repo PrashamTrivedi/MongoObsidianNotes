@@ -24,13 +24,8 @@
             "id": "a723fb48371ab925",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -148,7 +143,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +159,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,9 +180,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "PSTT/Atlas Search Fundamentals.md"
-              }
+              "state": {}
             }
           },
           {
@@ -245,10 +236,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a723fb48371ab925",
+  "active": "3d6822bad13ceb0c",
   "lastOpenFiles": [
-    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Design Skills and Advanced Features.md",
     "Untitled Diagram 1.svg",
     "PSTT/Atlas Notes.md",
     "PSTT/PSTT.md",

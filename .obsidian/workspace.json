@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "Misc Notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "Misc Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "Misc Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Atlas Notes.md"
+                "file": "Misc Notes.md"
               }
             }
           },
@@ -222,7 +221,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -240,17 +239,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3d6822bad13ceb0c",
+  "active": "95a47abcdbb6ae3f",
   "lastOpenFiles": [
+    "PSTT/Atlas Notes.md",
+    "Gobind Call Notes.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Atlas Search Fundamentals.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "Untitled Diagram 1.svg",
-    "PSTT/Atlas Notes.md",
     "PSTT/PSTT.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Replication.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Intro to Mongodb.md"
+    "PSTT/Diagnostic And Debugging.md"
   ]
 }

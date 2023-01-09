@@ -13,19 +13,11 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc Notes.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
-            }
-          },
-          {
-            "id": "a723fb48371ab925",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -142,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Misc Notes.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Misc Notes.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Misc Notes.md"
+                "file": "PSTT/Optimizing Storage.md"
               }
             }
           },
@@ -221,7 +213,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -241,15 +233,15 @@
   },
   "active": "95a47abcdbb6ae3f",
   "lastOpenFiles": [
-    "PSTT/Atlas Notes.md",
+    "Slow Query.md",
+    "ScreenshotNewVault.png",
+    "Readme.md",
+    "Misc Notes.md",
     "Gobind Call Notes.md",
-    "Untitled Diagram 1.svg",
-    "PSTT/Atlas Search Fundamentals.md",
-    "PSTT/Design Skills and Advanced Features.md",
+    "Evaluation.md",
     "PSTT/PSTT.md",
+    "Drawings/Drawings.md",
     "PSTT/Optimizing Storage.md",
-    "PSTT/Production Ready Development.md",
-    "PSTT/Replication.md",
-    "PSTT/Diagnostic And Debugging.md"
+    "PSTT/Internals.md"
   ]
 }

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "PSTT/Internals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -52,14 +52,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Diagnostic And Debugging.md",
+                "file": "PSTT/Optimizing Storage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -86,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "eventual",
+                "query": "blocki",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -114,7 +115,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "Untitled Diagram 1.svg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "Untitled Diagram 1.svg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Optimizing Storage.md"
+                "file": "Untitled Diagram 1.svg"
               }
             }
           },
@@ -213,7 +214,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -231,17 +232,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "95a47abcdbb6ae3f",
+  "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
-    "Slow Query.md",
-    "ScreenshotNewVault.png",
-    "Readme.md",
+    "PSTT/Internals.md",
+    "PSTT/Diagnostic And Debugging.md",
+    "PSTT/Design Skills and Advanced Features.md",
+    "PSTT/Optimizing Storage.md",
     "Misc Notes.md",
     "Gobind Call Notes.md",
-    "Evaluation.md",
-    "PSTT/PSTT.md",
-    "Drawings/Drawings.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/Internals.md"
+    "PSTT/Atlas Search Fundamentals.md",
+    "PSTT/Atlas Notes.md",
+    "Untitled Diagram 1.svg",
+    "Slow Query.md"
   ]
 }

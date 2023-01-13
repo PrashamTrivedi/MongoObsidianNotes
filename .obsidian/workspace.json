@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Internals.md",
-                "mode": "source",
+                "file": "PSTT/Intro to Mongodb.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -59,8 +59,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -87,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "blocki",
+                "query": "ordered",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -115,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -135,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Intro to Mongodb.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Intro to Mongodb.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "PSTT/Intro to Mongodb.md"
               }
             }
           },
@@ -214,7 +213,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -232,17 +231,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7fe311206a9dbc59",
+  "active": "95a47abcdbb6ae3f",
   "lastOpenFiles": [
+    "PSTT/Replication.md",
+    "PSTT/Production Ready Development.md",
+    "PSTT/Internals.md",
+    "Evaluation.md",
+    "Untitled Diagram 1.svg",
     "PSTT/Atlas Notes.md",
     "PSTT/Optimizing Storage.md",
-    "Untitled Diagram 1.svg",
-    "PSTT/Internals.md",
     "PSTT/Diagnostic And Debugging.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "Misc Notes.md",
-    "Gobind Call Notes.md",
-    "PSTT/Atlas Search Fundamentals.md",
-    "Slow Query.md"
+    "Misc Notes.md"
   ]
 }

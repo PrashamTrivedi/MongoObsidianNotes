@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Intro to Mongodb.md",
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ordered",
+                "query": "oplog.rs",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Design Skills and Advanced Features.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "PSTT/Design Skills and Advanced Features.md"
               }
             }
           },
@@ -231,14 +231,14 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7fe311206a9dbc59",
+  "active": "95a47abcdbb6ae3f",
   "lastOpenFiles": [
+    "Untitled Diagram 1.svg",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Replication.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Internals.md",
     "Evaluation.md",
-    "Untitled Diagram 1.svg",
     "PSTT/Atlas Notes.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Diagnostic And Debugging.md",

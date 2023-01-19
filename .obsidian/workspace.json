@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Atlas Notes.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -114,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Atlas Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md",
+                "file": "PSTT/Atlas Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PSTT/Design Skills and Advanced Features.md"
+                "file": "PSTT/Atlas Notes.md"
               }
             }
           },
@@ -234,14 +234,14 @@
   "active": "95a47abcdbb6ae3f",
   "lastOpenFiles": [
     "Untitled Diagram 1.svg",
+    "PSTT/Optimizing Storage.md",
+    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Intro to Mongodb.md",
     "PSTT/Replication.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Internals.md",
     "Evaluation.md",
     "PSTT/Atlas Notes.md",
-    "PSTT/Optimizing Storage.md",
-    "PSTT/Diagnostic And Debugging.md",
-    "PSTT/Design Skills and Advanced Features.md"
+    "PSTT/Diagnostic And Debugging.md"
   ]
 }

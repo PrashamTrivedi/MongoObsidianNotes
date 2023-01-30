@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Atlas Notes.md",
+                "file": "PSTT/Replication.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "oplog.rs",
+                "query": "writeCon",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -114,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -233,15 +233,15 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
-    "PSTT/Atlas Notes.md",
+    "PSTT/Replication.md",
+    "PSTT/Mongod.md",
     "Untitled Diagram 1.svg",
+    "PSTT/Atlas Notes.md",
     "PSTT/Optimizing Storage.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Replication.md",
     "PSTT/Production Ready Development.md",
     "PSTT/Internals.md",
-    "Evaluation.md",
-    "PSTT/Diagnostic And Debugging.md"
+    "Evaluation.md"
   ]
 }

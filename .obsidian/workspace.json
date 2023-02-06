@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Replication.md",
-                "mode": "preview",
+                "file": "PSTT/Optimizing Storage.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "writeCon",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -114,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -233,15 +233,15 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
-    "PSTT/Replication.md",
-    "PSTT/Mongod.md",
-    "Untitled Diagram 1.svg",
-    "PSTT/Atlas Notes.md",
     "PSTT/Optimizing Storage.md",
+    "PSTT/Internals.md",
+    "Untitled Diagram 1.svg",
+    "PSTT/Mongod.md",
+    "PSTT/Replication.md",
+    "PSTT/Operational Skills.md",
+    "PSTT/Atlas Notes.md",
     "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Intro to Mongodb.md",
-    "PSTT/Production Ready Development.md",
-    "PSTT/Internals.md",
-    "Evaluation.md"
+    "PSTT/Production Ready Development.md"
   ]
 }

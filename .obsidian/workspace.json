@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Optimizing Storage.md",
+                "file": "PSTT/Diagnostic And Debugging.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "currentOp",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -114,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -217,7 +217,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,15 +234,15 @@
   },
   "active": "7fe311206a9dbc59",
   "lastOpenFiles": [
+    "PSTT/Diagnostic And Debugging.md",
     "PSTT/Optimizing Storage.md",
-    "PSTT/Internals.md",
     "Untitled Diagram 1.svg",
+    "PSTT/Internals.md",
     "PSTT/Mongod.md",
     "PSTT/Replication.md",
     "PSTT/Operational Skills.md",
     "PSTT/Atlas Notes.md",
     "PSTT/Design Skills and Advanced Features.md",
-    "PSTT/Intro to Mongodb.md",
-    "PSTT/Production Ready Development.md"
+    "PSTT/Intro to Mongodb.md"
   ]
 }

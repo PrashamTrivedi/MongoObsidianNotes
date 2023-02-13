@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PSTT/Diagnostic And Debugging.md",
+                "file": "PSTT/Design Skills and Advanced Features.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c595b3e6adf8ce7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -59,7 +72,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "currentOp",
+                "query": "regex",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -114,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -134,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Diagram 1.svg",
+                "file": "PSTT/Atlas Search Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Diagram 1.svg"
+                "file": "PSTT/Atlas Search Fundamentals.md"
               }
             }
           },
@@ -232,17 +246,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7fe311206a9dbc59",
+  "active": "5c595b3e6adf8ce7",
   "lastOpenFiles": [
-    "PSTT/Diagnostic And Debugging.md",
     "PSTT/Optimizing Storage.md",
+    "PSTT/Design Skills and Advanced Features.md",
     "Untitled Diagram 1.svg",
+    "PSTT/Diagnostic And Debugging.md",
     "PSTT/Internals.md",
     "PSTT/Mongod.md",
     "PSTT/Replication.md",
     "PSTT/Operational Skills.md",
     "PSTT/Atlas Notes.md",
-    "PSTT/Design Skills and Advanced Features.md",
     "PSTT/Intro to Mongodb.md"
   ]
 }
